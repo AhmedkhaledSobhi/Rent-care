@@ -1,0 +1,105 @@
+footer{
+    background-color: #F4F4F4;
+
+    h6 {
+        font-size: 20px !important;
+        font-weight: 700;
+        line-height: 120%;
+    }
+    li{
+        transition: all 2s;
+        margin: 5px 0;
+        a {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 123%;
+        }
+        &:hover{
+            padding-left: 10px;
+        }
+    }
+    
+
+    .icon-download{
+        display: flex;
+    }
+
+    // =====================================
+
+    .language-switcher {
+        position: relative;
+        display: inline-block;
+        font-family: Arial, sans-serif;
+        .dropbtn {
+
+            padding: 10px;
+            margin-left: 15px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+            top: -450%; 
+            left: -5px;
+            overflow-y:auto;
+            border-radius: 10px;
+            a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                cursor: pointer;
+                .flag-icon {
+                    margin-right: 10px;
+                }
+                &:hover {
+                    background-color: #ddd;
+                }
+            }
+
+        }
+    }
+    .language-switcher.active .dropdown-content {
+        display: block;
+    }
+
+    
+
+
+    // ===============================
+
+
+
+    @media (max-width :575.98px) {
+        .row{
+            margin: auto;
+            .col-lg-2 , .col-lg-1{
+                width: 50% !important;
+                padding-bottom: 5px;
+            }
+        }
+        .offset-1 {
+            margin-left: 0.333333%;
+        }
+        .end-footer{
+            text-align: center;
+            margin: auto;
+        }
+        .icon-download{
+            flex-direction: column;
+            a {
+                margin: 7px auto;
+            }
+        }
+        .dropdown-content{
+            top: -415% !important; 
+            left: -5px;
+        }
+    }
+}

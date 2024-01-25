@@ -1,0 +1,68 @@
+nav{
+
+    .btn-become {
+        padding: 3px 20px ;
+        transition: all 0.7s;
+        &:hover {
+            color: $secondary ;
+            border-radius: 15px;
+        }
+    }
+    .btn-user{
+        border: 1px solid transparent;
+        padding: 5px;
+        transition: all 1s;
+        background-color: transparent;
+        border-radius: 10px;
+        i {
+            color: $black !important;
+            font-size: 19px;
+            transition: all 1s;
+        }
+        &:hover  {
+            border: 1px solid $secondary !important;
+            background-color: $gray;
+        }
+        &:hover i {
+            color :$secondary !important;
+        }
+    }
+
+    .offcanvas-body {
+        li {
+            padding: 0 10px;
+            border-radius: 10px;
+            a {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 123%;
+                i {
+                    margin-right: 15px;
+                }
+            }
+            &:hover {
+                background-color: $gray;
+                i {
+                    color: $secondary;
+                }
+            }
+        }
+    }
+
+    @media (max-width:575.98px) {
+        .container-fluid {
+        }
+        .btn-user{
+            margin-left: 15px !important;
+        }
+        .navbar-brand{
+            margin: auto;
+        }
+        .btn-become{
+            padding: 3px !important;
+        }
+        .img-profile{
+            display: none;
+        }
+    }
+}

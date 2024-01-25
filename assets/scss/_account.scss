@@ -1,0 +1,234 @@
+
+#account {
+    .container {
+        width: 65%;
+        padding: 45px;
+        // background-color: rgb(176, 176, 173);
+        h2 {
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 23px;
+        }
+        .Contact-information {
+            h6 {
+                margin-top: 10px;
+            }
+        }
+        .email {
+            margin: 10px auto;
+            label {
+                margin: 15px auto;
+            }
+            input {
+                width: 70%;
+            }
+            span {
+                font-size: 18px;
+                margin-left: 10px;
+                color: $secondary;
+                i {
+                    font-size: 20px;
+                }
+            }
+        }
+        .password-Update ,.PHONE-Update {
+            h6 {
+                @extend %title;
+                padding: 8px 0;
+            }
+            button {
+                @extend %btn-update;
+                &:hover{
+                    background: $gridenColor;
+                    color: $white;
+                }
+            }
+        }
+        .notification-mobile, .notification-email {
+            margin: 8px auto;
+            h6 {
+                @extend %title;
+            }
+            label {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 24px;
+                padding: 8px;
+                color: #121214;
+            }
+        }
+        .btn-save-change {
+            @extend %btn-update;
+            background-color: $secondary;
+            color: $white; 
+            &:hover {
+                background: $gridenColor;
+                color: $black;
+            }
+        }
+
+        .accountSingleSignOn {
+            .accountSingleSignOn-title {
+                width: 330px;
+                padding:15px 10px;
+                border: 2px solid;
+                display: flex;
+                img {
+                    width: 50px;
+                    margin-right: 10px;
+                }
+                .name {
+                    margin-left:15px !important;
+    
+                    h6{
+                        font-weight: 900;
+                        font-style: 18px;
+                        line-height: 20px;
+                        margin-bottom: 20px;
+                    }
+                    span {
+                        border: 1px solid;
+                        margin: 30px 0 0;
+                        padding: 8px ;
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 25px;
+                        cursor: pointer;
+                        &:hover {
+                            background-color:#f0f0f0;
+                        }
+                    }
+                }
+    
+    
+            }
+            button {
+                margin-top: 15px;
+                padding: 5px;
+                width: 330px;
+                border-radius: 25px;
+                background-color: white;
+                transition: all 1s ease-in-out;
+                &:hover {
+                    background-color: #f0f0f0;
+                }
+                
+            }
+        }
+
+        .Transmission {
+            h3 {
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: #121214;
+            }
+            span {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+              color:#231f20;  
+            }
+        }
+        .approvalstatus {
+            h3 {
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $black;
+            }
+            a {
+                text-decoration: none;
+                color: $secondary;
+                transition: all 1s ;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .Travelcredit {
+            h3 {
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+            span {
+                font-size: 12px;
+                font-weight: 900;
+                line-height: 16px;
+                color:#898989;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $black;
+            }
+            .code {
+                input {
+                    display: block;
+                }
+                button {
+                    @extend %btn-update;
+                    margin: 15px 0;
+                    &:hover {
+                        background: $gridenColor;
+                        color: $black;
+                    }
+                }
+                h5 {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-weight: 400;
+                }
+            } 
+        }
+        .Download-account-data {
+            h3 {
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+            p {
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 24px;
+                color: $black; 
+            }
+            button {
+                @extend %btn-update;
+                &:hover {
+                    background: $gridenColor;
+                    color: $black;
+                }
+            }
+        }
+        .Close-account{
+            h3{
+                font-size: 16px;
+                font-weight: 900;
+                line-height: 20px;
+            }
+            button{
+                margin: 10px;
+                @extend %btn-update;
+                &:hover {
+                    background: $gridenColor;
+                    color: $black;
+                }
+            }
+        }
+    }
+
+
+}

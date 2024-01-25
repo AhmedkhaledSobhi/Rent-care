@@ -1,0 +1,18 @@
+#Frequntly{
+    h3{
+        text-align: center;
+        font-size: 39px;
+        font-weight: 700px;
+        padding: 20px;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: transparent;
+    }
+
+    @media (max-width: 575.98px) {
+        h3{
+            font-size: 22px !important;
+        }
+    }
+}

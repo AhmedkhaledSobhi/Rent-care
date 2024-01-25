@@ -1,0 +1,128 @@
+$white:#FFF;
+$gray:#f4f7fd;
+$red: #FF8888;
+$base: #1085A9;
+$black:#000000;
+$blue: #01A0E1;
+$pink: #FF681B;
+$info: #FAA21A;
+$green: #3FAD48;
+$primary: #8DC63F;
+$secondary: #FF4F3B;
+
+// Theme Color - Defualt Colors
+$textcolor: #6D6D6D;
+$heading-color: #0D0D0F;
+$section-bg: #F3F2F8;
+$third-color: rgba(37, 105, 215, 0.1);
+$theme-color:#9b93916b;
+$second-color: #2ab9f7 ;
+$gridenColor :-webkit-linear-gradient(45deg ,#be685e , #ff5805) ;
+
+
+
+$totle-items-w:96;
+$totle-items-m:76;
+
+
+%btn{
+    width: 100%;
+    padding: 15px 0;
+    margin: 20px auto;
+    border: 2px solid $black;
+    border-radius: 5px;
+    transition: all 1s ease-in-out;
+}
+%btn-update {
+    border: 1px solid $black;
+    background-color: transparent;
+    border-radius: 7px;
+    padding:10px 20px ;
+    transition: all 2s ease-in-out;
+    font-weight:700 ;
+    font-size: 16px;
+    line-height: 24px;
+}
+%title {
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 16px;
+    color: #898989;
+    
+}
+
+@for $i from 1 through $totle-items-w{
+
+    .w-s-#{$i +4}{
+        width: $i+4% ;
+    }
+
+}
+
+// @for $i from 1 through $totle-items-m{
+
+//     .m-a-#{$i +4}{
+//         margin: $i+4px ;
+//     }
+
+//     .m-x-#{$i +4}{
+//         margin-left: $i+4px ;
+//         margin-right: $i+4px ;
+//     }
+//     .m-s-#{$i +4}{
+//         margin-top: $i+4px ;
+//         margin-bottom: $i+4px ;
+//     }
+
+//     .m-r-#{$i +4}{
+//         margin-right: $i+4px ;
+//     }
+
+//     .m-l-#{$i +4}{
+//         margin-left: $i+4px ;
+//     }
+
+//     .m-t-#{$i +4}{
+//         margin-top: $i+4px ;
+//     }
+
+//     .m-b-#{$i +4}{
+//         margin-bottom: $i+4px ;
+//     }
+
+// }
+
+// @for $i from 1 through $totle-items-m{
+
+//     .p-a-#{$i +4}{
+//         padding: $i+4px ;
+//     }
+
+//     .p-x-#{$i +4}{
+//         padding-right: $i+4px ;
+//         padding-left: $i+4px ;
+//     }
+//     .p-y-#{$i +4}{
+//         padding-top: $i+4px ;
+//         padding-bottom: $i+4px ;
+//     }
+
+//     .p-r-#{$i +4}{
+//         padding-right: $i+4px ;
+//     }
+//     .p-l-#{$i +4}{
+//         padding-left: $i+4px ;
+//     }
+
+//     .p-t-#{$i +4}{
+//         padding-top: $i+4px ;
+//     }
+
+//     .p-b-#{$i +4}{
+//         padding-bottom: $i+4px ;
+//     }
+
+// }
+
+
+// ================================================
