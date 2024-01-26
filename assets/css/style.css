@@ -1292,5 +1292,147 @@ footer .language-switcher.active .dropdown-content {
   background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
   color: #000000;
 }
+@media (max-width: 768px) {
+  #account .container {
+    width: 100%;
+  }
+  #account .container .offset-1 {
+    margin: 0px !important;
+  }
+  #account .container .accountSingleSignOn .accountSingleSignOn-title {
+    width: 250px;
+    margin-top: 20px;
+  }
+  #account .container .accountSingleSignOn button {
+    width: 250px;
+  }
+}
+
+#profile {
+  padding: 40px 0;
+}
+#profile .bg-banner {
+  background-repeat: no-repeat;
+  height: 40vh;
+  padding: 40px 0;
+}
+#profile .bg-banner .container {
+  width: 65%;
+  margin: 100px auto;
+}
+#profile .bg-banner .container .title-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#profile .bg-banner .container .title-img button {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  background-color: #FF4F3B;
+  transition: all 1s;
+}
+#profile .bg-banner .container .title-img button:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#profile .bg-banner .container .lt-profile .item-info {
+  display: flex;
+  justify-content: space-between;
+}
+#profile .bg-banner .container .lt-profile h5 {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 44px;
+}
+#profile .bg-banner .container .lt-profile .joind {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#profile .bg-banner .container .lt-profile span {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #898989;
+}
+#profile .bg-banner .container .lt-profile h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#profile .bg-banner .container .lt-profile a {
+  text-decoration: none;
+  color: #FF4F3B;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+#profile .bg-banner .container .lt-profile a:hover {
+  text-decoration: underline;
+}
+#profile .bg-banner .container .lt-profile i {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FF4F3B;
+}
+#profile .bg-banner .container .lt-profile p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #898989;
+}
+#profile .bg-banner .container .rt-reviews .reviews {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+#profile .bg-banner .container .rt-reviews span {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #898989;
+}
+#profile .bg-banner .container .rt-reviews .rait i {
+  font-size: 16px;
+  font-weight: 400;
+  color: #231f20;
+}
+#profile .bg-banner .container .rt-reviews h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+@media (max-width: 768px) {
+  #profile {
+    width: 100%;
+  }
+  #profile .bg-banner {
+    padding: 10px 0;
+    height: 30vh !important;
+  }
+  #profile .title-img {
+    display: block !important;
+  }
+  #profile .title-img svg {
+    width: 50% !important;
+    height: 50% !important;
+  }
+  #profile .lt-profile h5 {
+    font-size: 28px !important;
+    font-weight: 500;
+    line-height: 23px;
+  }
+  #profile .lt-profile .item-info {
+    display: initial !important;
+  }
+  #profile .rt-reviews .reviews {
+    display: initial !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

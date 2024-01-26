@@ -3,7 +3,6 @@
     .container {
         width: 65%;
         padding: 45px;
-        // background-color: rgb(176, 176, 173);
         h2 {
             font-size: 40px;
             font-weight: 700;
@@ -230,5 +229,23 @@
         }
     }
 
+    @media (max-width :768px) {
+        .container {
+            width: 100%;
+
+            .offset-1 {
+                margin: 0px !important ;
+            }
+            .accountSingleSignOn {
+                .accountSingleSignOn-title{
+                    width: 250px;
+                   margin-top: 20px;
+                }
+                button {
+                    width: 250px;
+                }
+            }
+        }
+    }
 
 }
