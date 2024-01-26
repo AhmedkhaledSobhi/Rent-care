@@ -53,7 +53,7 @@ $totle-items-m:76;
 
 @for $i from 1 through $totle-items-w{
 
-    .w-s-#{$i +4}{
+    .w-s-#{$i+4}{
         width: $i+4% ;
     }
 

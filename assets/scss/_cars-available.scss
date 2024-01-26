@@ -1,0 +1,71 @@
+#cars-available {
+    height: 100vh;
+    .btn-filter {
+        margin-left: 50px;
+        button {
+            @extend %btn-update
+        }
+    }
+    .search-car {
+        width: 95%;
+        margin: auto;
+        .card {
+            .card-body {
+                h4 {
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: 24px;
+                }
+                p {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 22px;
+                    .fa-star {
+                        color: $secondary;
+                    }
+                    .fa-hand-holding-heart {
+                        color: $textcolor;
+                    }
+                }
+                span {
+                    i {
+                        color: $textcolor;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width :768px) {
+        .card {
+            .card-body {
+                h4 {
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    .fa-star {
+                        color: $secondary;
+                    }
+                    .fa-hand-holding-heart {
+                        color: $textcolor;
+                    }
+                }
+                span {
+                    i {
+                        color: $textcolor;
+                    }
+                }
+            }
+        }
+        iframe {
+            height: auto;
+            width: 100% !important;
+        }
+    }
+  
+}

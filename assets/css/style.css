@@ -7,7 +7,7 @@
   transition: all 1s ease-in-out;
 }
 
-#account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
+#cars-available .btn-filter button, #account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
   border: 1px solid #000000;
   background-color: transparent;
   border-radius: 7px;
@@ -1308,13 +1308,10 @@ footer .language-switcher.active .dropdown-content {
   }
 }
 
-#profile {
-  padding: 40px 0;
-}
 #profile .bg-banner {
   background-repeat: no-repeat;
-  height: 40vh;
-  padding: 40px 0;
+  min-height: 90vh;
+  padding: 40px 0 0;
 }
 #profile .bg-banner .container {
   width: 65%;
@@ -1413,7 +1410,6 @@ footer .language-switcher.active .dropdown-content {
   }
   #profile .bg-banner {
     padding: 10px 0;
-    height: 30vh !important;
   }
   #profile .title-img {
     display: block !important;
@@ -1432,6 +1428,61 @@ footer .language-switcher.active .dropdown-content {
   }
   #profile .rt-reviews .reviews {
     display: initial !important;
+  }
+}
+
+#cars-available {
+  height: 100vh;
+}
+#cars-available .btn-filter {
+  margin-left: 50px;
+}
+#cars-available .search-car {
+  width: 95%;
+  margin: auto;
+}
+#cars-available .search-car .card .card-body h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#cars-available .search-car .card .card-body p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+}
+#cars-available .search-car .card .card-body p .fa-star {
+  color: #FF4F3B;
+}
+#cars-available .search-car .card .card-body p .fa-hand-holding-heart {
+  color: #6D6D6D;
+}
+#cars-available .search-car .card .card-body span i {
+  color: #6D6D6D;
+}
+@media (max-width: 768px) {
+  #cars-available .card .card-body h4 {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  #cars-available .card .card-body p {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 20px;
+  }
+  #cars-available .card .card-body p .fa-star {
+    color: #FF4F3B;
+  }
+  #cars-available .card .card-body p .fa-hand-holding-heart {
+    color: #6D6D6D;
+  }
+  #cars-available .card .card-body span i {
+    color: #6D6D6D;
+  }
+  #cars-available iframe {
+    height: auto;
+    width: 100% !important;
   }
 }
 
