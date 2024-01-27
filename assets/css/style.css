@@ -1383,26 +1383,73 @@ footer .language-switcher.active .dropdown-content {
   line-height: 16px;
   color: #898989;
 }
-#profile .bg-banner .container .rt-reviews .reviews {
-  display: flex;
-  align-items: center;
-  margin-top: 30px;
-}
-#profile .bg-banner .container .rt-reviews span {
+#profile .bg-banner .container .rt-reviews h4 {
   font-size: 12px;
   font-weight: 900;
   line-height: 16px;
   color: #898989;
 }
-#profile .bg-banner .container .rt-reviews .rait i {
+#profile .bg-banner .container .rt-reviews p {
   font-size: 16px;
   font-weight: 400;
-  color: #231f20;
+  line-height: 24px;
 }
-#profile .bg-banner .container .rt-reviews h6 {
-  font-size: 16px;
+#profile .bg-banner .container .rt-reviews .reviews-hosts small {
+  font-size: 13px;
   font-weight: 700;
   line-height: 24px;
+  color: #898989 !important;
+}
+#profile .bg-banner .container .rt-reviews .reviews-hosts .reviews {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#profile .bg-banner .container .rt-reviews .reviews-hosts .reviews .rait i {
+  color: #898989;
+}
+#profile .bg-banner .container .rt-reviews .reviews-hosts .reviews h6, #profile .bg-banner .container .rt-reviews .reviews-hosts .reviews p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card {
+  margin-top: 30px;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .card h6 {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 24px;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .card p i {
+  color: #FF4F3B;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .favorites-buttons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .favorites-buttons button {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 9px 10px;
+  margin: 10px auto;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  background-color: #FF4F3B;
+  transition: all 1s;
+}
+#profile .bg-banner .container .rt-reviews .favorites-card .favorites-buttons button:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
 }
 @media (max-width: 768px) {
   #profile {
@@ -1483,6 +1530,218 @@ footer .language-switcher.active .dropdown-content {
   #cars-available iframe {
     height: auto;
     width: 100% !important;
+  }
+}
+
+#edit {
+  margin: 60px auto;
+}
+#edit .bg-banner {
+  background-repeat: no-repeat;
+  min-height: 90vh;
+  padding: 65px 0 0;
+}
+#edit .cont-edit {
+  width: 65%;
+}
+#edit .cont-edit .title-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#edit .cont-edit .title-img button:first-child {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 5px 10px;
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  background-color: #FF4F3B;
+  transition: all 1s;
+}
+#edit .cont-edit .title-img button:first-child:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#edit .cont-edit .title-img button:last-child {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  transition: all 1s;
+}
+#edit .cont-edit .title-img button:last-child:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#edit .cont-edit .lt-edit {
+  margin-top: 15px;
+}
+#edit .cont-edit .lt-edit button {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 9px 10px;
+  margin: 10px auto;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  background-color: #FF4F3B;
+  transition: all 1s;
+}
+#edit .cont-edit .lt-edit button:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#edit .cont-edit .lt-edit p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #949494;
+}
+#edit .cont-edit .lt-edit h4 {
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 44px;
+}
+#edit .cont-edit .lt-edit .lives {
+  margin: 30px auto;
+}
+#edit .cont-edit .lt-edit .lives p {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #898989;
+}
+#edit .cont-edit .lt-edit .lives p:last-child {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #949494;
+}
+#edit .cont-edit .lt-edit .item-info {
+  display: flex;
+  justify-content: space-between;
+}
+#edit .cont-edit .lt-edit .item-info h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#edit .cont-edit .lt-edit .item-info a {
+  text-decoration: none;
+  color: #FF4F3B;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  transition: all 1s ease-in-out;
+}
+#edit .cont-edit .lt-edit .item-info a:hover {
+  text-decoration: underline;
+}
+#edit .cont-edit .lt-edit .item-info i {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #FF4F3B;
+}
+#edit .cont-edit .lt-edit form label {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #898989;
+  padding: 20px 0;
+}
+#edit .cont-edit .lt-edit form input {
+  border-radius: 0px;
+}
+#edit .cont-edit .rt-edit h4 {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #898989;
+}
+#edit .cont-edit .rt-edit p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#edit .cont-edit .rt-edit .reviews-hosts small {
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #898989 !important;
+}
+#edit .cont-edit .rt-edit .reviews-hosts .reviews {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+#edit .cont-edit .rt-edit .reviews-hosts .reviews .rait i {
+  color: #898989;
+}
+#edit .cont-edit .rt-edit .reviews-hosts .reviews h6, #edit .cont-edit .rt-edit .reviews-hosts .reviews p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+#edit .cont-edit .rt-edit .favorites-card {
+  margin-top: 30px;
+}
+#edit .cont-edit .rt-edit .favorites-card .card h6 {
+  font-size: 17px;
+  font-weight: 900;
+  line-height: 24px;
+}
+#edit .cont-edit .rt-edit .favorites-card .card p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+}
+#edit .cont-edit .rt-edit .favorites-card .card p i {
+  color: #FF4F3B;
+}
+#edit .cont-edit .rt-edit .favorites-card .favorites-buttons {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+#edit .cont-edit .rt-edit .favorites-card .favorites-buttons button {
+  border: 0.5px solid;
+  border-radius: 7px;
+  padding: 9px 10px;
+  margin: 10px auto;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  background-color: #FF4F3B;
+  transition: all 1s;
+}
+#edit .cont-edit .rt-edit .favorites-card .favorites-buttons button:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+@media (max-width: 768px) {
+  #edit .lt-edit h4 {
+    font-size: 22px !important;
+  }
+  #edit .offset-1 {
+    margin: 0px !important;
+  }
+  #edit .cont-edit {
+    width: 90%;
+  }
+  #edit .reviews {
+    display: initial !important;
+  }
+  #edit textarea {
+    width: 100%;
+  }
+  #edit .favorites-card .col-lg-6 {
+    margin: 5px auto;
   }
 }
 

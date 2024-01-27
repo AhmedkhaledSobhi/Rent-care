@@ -5,6 +5,7 @@
         background-repeat: no-repeat;
         min-height: 90vh;
         padding: 40px 0 0;
+
         .container {
             width: 65%;
             margin:100px auto;
@@ -13,7 +14,7 @@
                 justify-content: space-between;
                 align-items: flex-start;
                 button {
-                    border: 0.5px solid;
+                border: 0.5px solid;
                     border-radius: 7px;
                     padding: 5px 10px;
                     color:$white ;
@@ -78,34 +79,82 @@
                 }
             }
             .rt-reviews {
-                .reviews {
-                    display: flex;
-                    align-items: center;
-                    margin-top: 30px;
-                }
-                span {
+                h4 {
                     font-size: 12px;
                     font-weight: 900;
                     line-height: 16px;
                     color: #898989;
                 }
-
-                .rait {
-                    i {
-                        font-size: 16px;
-                        font-weight: 400;
-                        // line-height: 24px;
-                        color: #231f20;
-                    }
-                }
-                h6 {
+                p {
                     font-size: 16px;
-                    font-weight: 700;
+                    font-weight: 400;
                     line-height: 24px;
                 }
-                p {
-                    
+                .reviews-hosts {
+                    small {
+                        font-size: 13px;
+                        font-weight: 700;
+                        line-height: 24px;
+                        color: #898989 !important;
+                    }
+                    .reviews {
+                        display: flex;
+                        align-items: center;
+                        margin-top: 20px;
+                        .rait {
+                            i {
+                                color: #898989;
+                            }
+                        }
+                        h6 ,p{
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #898989;
+                        }
+                    }
                 }
+
+                .favorites-card {
+                    margin-top: 30px;
+                    .card {
+                        h6 {
+                            font-size: 17px;
+                            font-weight: 900;
+                            line-height: 24px;
+                        }
+                        p {
+                            font-size: 16px;
+                            font-weight: 400;
+                            line-height: 24px;
+                            color: #898989;
+                            i {
+                                color: $secondary;
+                            }
+                        }
+                    }
+                    .favorites-buttons {
+                        margin: 20px auto;
+                        display: flex;
+                        justify-content: center;
+                        button{
+                            border: 0.5px solid;
+                            border-radius: 7px;
+                            padding: 9px 10px;
+                            margin: 10px auto;
+                            color:$white ;
+                            font-size: 16px ;
+                            font-weight: 700;
+                            line-height: 16px;
+                            background-color: $secondary;
+                            transition: all 1s ;
+                            &:hover {
+                                background: $gridenColor;
+                            }
+                        }
+                    }
+                }
+                
             }
         }
     }
