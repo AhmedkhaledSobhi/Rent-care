@@ -24,6 +24,12 @@ $gridenColor :-webkit-linear-gradient(45deg ,#be685e , #ff5805) ;
 $totle-items-w:96;
 $totle-items-m:76;
 
+input ,textarea{
+    border-color: #be685e !important;
+    &:focus {
+        box-shadow: 0 0 0 0.25rem #fe7667a8 !important;
+    }
+} 
 
 %btn{
     width: 100%;
