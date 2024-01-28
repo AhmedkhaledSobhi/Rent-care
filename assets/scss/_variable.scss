@@ -24,9 +24,14 @@ $gridenColor :-webkit-linear-gradient(45deg ,#be685e , #ff5805) ;
 $totle-items-w:96;
 $totle-items-m:76;
 
-input ,textarea{
+.progress, .progress-stacked {
+    --bs-progress-height: 0.5rem;
+    --bs-progress-bar-bg: #FF4F3B !important;
+}
+
+input , textarea , select{
     border-color: #be685e !important;
-    &:focus {
+    &:focus   {
         box-shadow: 0 0 0 0.25rem #fe7667a8 !important;
     }
 } 

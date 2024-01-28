@@ -1,9 +1,15 @@
 #cars-available {
-    height: 100vh;
+    // height: 100vh;
     .btn-filter {
         margin-left: 50px;
+        display: flex;
         button {
-            @extend %btn-update
+            margin: 0 6px;
+            @extend %btn-update;
+            transition: all 1s ease-in-out ;
+            &:hover {
+                background: $gridenColor;
+            }
         }
     }
     .search-car {
@@ -37,6 +43,14 @@
     }
 
     @media (max-width :768px) {
+        .btn-filter {
+            flex-direction: column;
+            margin-left: 10px;
+            button {
+                margin: 5px ;
+            }
+        }
+
         .card {
             .card-body {
                 h4 {

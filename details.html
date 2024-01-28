@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+      <!-- --------------------- flatpickr Date ----------------------- -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- -------------------- fonawesome css ------------------------- -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- --------------------- bootstrap css ------------------------------ -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- -------------------- Style css ---------------------- -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!--  =================== navbare start ================= -->
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid px-5">
+            <a class="navbar-brand" href="#">LoGo</a>
+
+            <div class="d-flex justify-content-between align-items-center px-2">
+                <button onclick="openlogin()" class="p-x-22 btn-become">Become a host</button>
+
+                <button class="btn-user   ms-5 " type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="">
+                        <i class="fa-solid fa-bars pe-1"></i>
+                        <i class="fa-regular fa-user"></i>
+                    </span>
+                </button>
+            </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LoGo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">
+                                <i class="fa-regular fa-heart"></i>
+                                Favorites
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-lines-leaning"></i>
+                                Trips
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-message"></i>
+                                Inbox
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-circle-user"></i>
+                                Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-user"></i>
+                                Account
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-car"></i>
+                                Become ahost
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-key"></i>
+                                How turo works
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-gift"></i>
+                                Gift Cards
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-headset"></i>
+                                Contact support
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-regular fa-note-sticky"></i>
+                                Legal
+                            </a>
+                        </li>
+                        <hr>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log out
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Log in
+                            </a>
+                        </li>
+
+                        <li class="nav-item" onclick="openlogin()">
+                            <a class="nav-link" href="#">
+                                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                                Sign Up
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- -------------------- end Navbar ------------------- -->
+
+
+    <section id="swiper-carousel">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/bg-header.jpg" alt="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="detail">
+        <div class="container contain-detail">
+            <div class="row">
+                <div class="col-lg-8 bg-light ">
+                    <div class="lt-detail">
+                        <div class="title">
+                            <h3>Kia Forte 2023</h3>
+                            <span>LXS</span>
+                            <p>4.94 <i class="fa-solid fa-star"></i> <small>(112 trips)</small> </p>
+                        </div>
+
+                        <div class="w-75">
+                            <div class=" d-flex justify-content-between">
+                                <div class="d-flex align-content-center justify-content-start">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none"
+                                        viewBox="0 0 24 24" class="seo-pages-0" role="img" version="1.1">
+                                        <path fill="#121214"
+                                            d="M20.47 21.12c0 .34.27.62.62.62s.63-.28.63-.63V9.78c0-1.14-1.09-2.04-2.1-2.08h-.84l-2.85-4.62c-.32-.48-.97-.83-1.55-.83h-4.07c-.71 0-1.29.58-1.29 1.29v2.6a.625.625 0 0 0 1.25 0l.04-2.65h4.07c.16 0 .42.14.5.26l3.02 4.9c.11.19.31.3.53.3h1.16c.38.02.88.43.88.83v11.34Z">
+                                        </path>
+                                        <path fill="#121214"
+                                            d="M2.87 21.74h16.26c.35 0 .62-.29.62-.63s-.27-.62-.62-.62H3.5V8.99h6.15c.34 0 .62-.29.62-.63s-.27-.62-.62-.62H2.87c-.34 0-.62.28-.62.62v12.75c0 .35.28.63.62.63Z">
+                                        </path>
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M11.91 8.99h3.87c.23 0 .44-.13.57-.34.1-.2.09-.45-.04-.64l-1.94-2.84a.631.631 0 0 0-.52-.27h-1.94c-.34 0-.62.28-.62.62v2.85c0 .34.27.62.62.62Zm2.68-1.25h-2.06V6.15h.98l1.08 1.59ZM2.87 6.77h3.67c.34 0 .62-.28.62-.63V3.81c0-.86-.65-1.56-1.45-1.56H3.7c-.81 0-1.45.68-1.45 1.56v2.33c0 .35.28.63.62.63Zm3.04-1.25H3.5V3.81c0-.17.09-.31.2-.31h2.01c.09 0 .2.13.2.31v1.71ZM9.56 15.73c0 1.33 1.08 2.42 2.42 2.42a2.43 2.43 0 0 0 2.43-2.42c0-1.104-1.553-3.91-1.875-4.49l-.005-.01c-.22-.39-.87-.39-1.09 0-.31.56-1.88 3.4-1.88 4.5Zm1.25 0c0-.4.54-1.64 1.17-2.87.63 1.22 1.18 2.47 1.17 2.87 0 .64-.53 1.17-1.17 1.17-.64 0-1.17-.52-1.17-1.17Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ms-3">38 MPG</p>
+                                </div>
+
+                                <div class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none"
+                                        viewBox="0 0 24 24" class="seo-pages-0" role="img" version="1.1">
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M9.58 15.24c0 1.6 1.3 2.9 2.9 2.9a2.9 2.9 0 0 0 2.89-2.9c0-1.02-1.11-3.29-2.04-5.02-.34-.63-1.37-.63-1.71 0-.93 1.73-2.04 4-2.04 5.02Zm1.25 0c0-.52.64-2.05 1.65-3.97 1.01 1.92 1.64 3.46 1.65 3.97 0 .91-.74 1.65-1.65 1.65-.91 0-1.65-.74-1.65-1.65Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M20.95 22.35V1.62c0-.34-.27-.62-.62-.62h-4.87c-1.04 0-2.04.39-2.8 1.1a.61.61 0 0 0-.04.88c.24.25.63.27.89.03.53-.49 1.22-.76 1.95-.76h4.25V4.5H9.84c-.16 0-.32.07-.44.18L4.19 9.89c-.11.11-.18.27-.18.44v12.03c0 .34.27.62.62.62h15.7c.35 0 .63-.28.62-.63Zm-1.24-.62H5.26V10.59l4.84-4.84h9.61v15.98Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#121214"
+                                            d="M4.18 7.43a.63.63 0 0 0 .89-.01l1.85-1.85c.24-.24.24-.64 0-.88a.628.628 0 0 0-.88 0L4.18 6.55c-.24.24-.24.64 0 .88Z">
+                                        </path>
+                                    </svg>
+                                    <p class="ms-3">Gas</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-between">
+                                <div class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none"
+                                        viewBox="0 0 24 24" class="seo-pages-0" role="img" version="1.1">
+                                        <path fill="#121214"
+                                            d="M19.67 21.45H7.27c-1.33 0-2.5-.85-2.91-2.1l-2.2-6.68c-.38-1.14-.05-2.4.83-3.21l6.08-5.63c.8-.75 2.28-1.33 3.38-1.33h8.92c.35 0 .62.28.62.62 0 .34-.28.62-.62.62h-8.92c-.78 0-1.96.46-2.53.99l-6.09 5.64c-.52.48-.71 1.23-.49 1.9l2.2 6.68c.25.75.94 1.25 1.72 1.25h12.4c.59 0 1.07-.48 1.07-1.07V5.51c0-.34.28-.62.62-.62.34 0 .62.28.62.62v13.61a2.3 2.3 0 0 1-2.3 2.33Z">
+                                        </path>
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M18.15 11.33H6.92c-.7 0-.93-.39-1-.56-.06-.17-.16-.62.35-1.1l4.27-4.03c.46-.43 1.27-.76 1.9-.76h5.71c.81 0 1.47.66 1.47 1.47v3.51c0 .81-.66 1.47-1.47 1.47Zm-10.5-1.25h10.5c.13 0 .22-.1.22-.22v-3.5c0-.12-.1-.22-.22-.22h-5.71c-.31 0-.82.2-1.04.42l-3.75 3.52Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#121214"
+                                            d="M17.04 13.72h1.95c.35 0 .62-.28.62-.62 0-.34-.27-.62-.62-.62h-1.95c-.34 0-.62.28-.62.62 0 .34.27.62.62.62Z">
+                                        </path>
+                                    </svg>
+                                    <p class="ms-3">4 doors</p>
+                                </div>
+
+                                <div class="d-flex">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none"
+                                        viewBox="0 0 24 24" class="seo-pages-0" role="img" version="1.1">
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M14.32 5.75h1.16c.45 0 .86-.23 1.11-.6.25-.37.3-.84.13-1.25l-.35-.86a1.83 1.83 0 0 0-1.7-1.14H9.29c-.75 0-1.42.45-1.7 1.15l-.35.86c-.17.41-.12.88.13 1.25s.66.59 1.11.59h1.16v.992A3.484 3.484 0 0 0 6.34 9.6l-.89 4.85c-.08.41-.09.81-.03 1.2a2.877 2.877 0 0 0-1.92 2.7v.8c0 1.58 1.28 2.87 2.86 2.87h11.21a2.88 2.88 0 0 0 2.87-2.86v-.8c0-1.48-1.16-2.73-2.63-2.85-.28-.02-.55.17-.65.44a2.443 2.443 0 0 1-2.68 1.59l-.92-.15c-.63-.1-1.26-.13-1.88-.11-.03 0-.69.01-1.3.11l-.91.15c-.79.13-1.57-.13-2.13-.7-.25-.25-.43-.54-.55-.85a.358.358 0 0 0-.04-.11 2.51 2.51 0 0 1-.07-1.19l.89-4.86A2.24 2.24 0 0 1 9.77 8h4.39c1.08 0 2 .77 2.2 1.83l.68 3.71a.626.626 0 0 0 1.23-.23l-.68-3.71a3.484 3.484 0 0 0-3.27-2.856V5.75Zm-1.24 0h-2.2v.99h2.2v-.99Zm-3.79-2.6c-.24 0-.45.14-.54.37l-.35.86.08.12h7c.01 0 .05 0 .07-.04l-.34-.94a.577.577 0 0 0-.54-.36H9.29v-.01ZM5.81 16.84c-.62.23-1.06.83-1.06 1.51v.8c0 .89.72 1.61 1.61 1.61h11.2c.89 0 1.61-.72 1.61-1.61v-.8c0-.69-.44-1.29-1.07-1.52-.75 1.4-2.28 2.18-3.84 1.93l-.91-.15c-.54-.09-1.1-.12-1.64-.1-.01 0-.61.01-1.14.1l-.91.15c-1.2.19-2.37-.2-3.22-1.07-.26-.25-.47-.54-.63-.85Z"
+                                            clip-rule="evenodd"></path>
+                                        <path fill="#121214" fill-rule="evenodd"
+                                            d="M13.87 16.27a1.558 1.558 0 0 0 1.37-.46c.36-.37.51-.89.42-1.4l-.58-3.19a2.047 2.047 0 0 0-2.01-1.68h-2.19c-.99 0-1.83.71-2.01 1.68l-.58 3.18c-.09.51.07 1.03.43 1.4.36.37.87.54 1.39.46l1.23-.2c.4-.06.81-.06 1.21 0l1.32.21Zm-1.14-1.44a5.322 5.322 0 0 0-1.59 0l-1.23.2a.35.35 0 0 1-.3-.1.338.338 0 0 1-.09-.3l.58-3.18c.07-.38.4-.65.78-.65h2.2c.38 0 .71.27.78.65l.58 3.19c.03.15-.04.25-.09.3a.35.35 0 0 1-.3.1l-1.32-.21Z"
+                                            clip-rule="evenodd"></path>
+                                    </svg>
+                                    <p class="ms-3">5 seats</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="hosted">
+                            <h6>HOSTED BY</h6>
+                            <div  class="d-flex align-items-center">
+                                <div class="" >
+                                    <img class="w-s-80" src="assets/img/th.jpeg" alt="">
+                                </div>
+                                <div class="star-host">
+                                    <h4>VINCENT</h4>
+                                    <span>
+                                        <svg class="seo-pages-1kzexgd" data-testid="IconAllStarHostFilled24" fill="none"
+                                            height="24" viewBox="0 0 24 24" width="24"
+                                            xmlns="http://www.w3.org/2000/svg" color="icon_01">
+                                            <path clip-rule="evenodd"
+                                                d="m19.585 13.072 2.257 2.76a.7.7 0 0 1-.404 1.128l-2.871.575-1.18 3.538a.698.698 0 0 1-.664.478.7.7 0 0 1-.593-.326l-2.376-3.771a.554.554 0 0 1 .294-.826 8.623 8.623 0 0 0 4.649-3.525c.201-.31.655-.315.888-.03Zm-15.169 0c.234-.284.688-.278.889.03a8.62 8.62 0 0 0 4.648 3.526c.345.108.487.52.294.826l-2.376 3.77a.703.703 0 0 1-1.258-.151l-1.18-3.538-2.87-.574a.698.698 0 0 1-.404-1.13l2.257-2.758Zm11.242-5.249-1.715 1.455.522 2.171a.383.383 0 0 1-.574.417l-1.89-1.174-1.89 1.173a.383.383 0 0 1-.576-.417l.524-2.17-1.714-1.451a.384.384 0 0 1 .215-.678l2.242-.157.843-2.039a.383.383 0 0 1 .709 0l.843 2.039 2.24.155a.384.384 0 0 1 .22.676ZM12 2a6.667 6.667 0 1 0 .001 13.334 6.667 6.667 0 0 0 0-13.334Z"
+                                                fill="#121214" fill-rule="evenodd"></path>
+                                        </svg> 
+                                        All-Star Host
+                                    </span>
+                                    <p>7,887 trips . Joined Dec 2020 <br>
+                                        <small>Typically respond within 1 minute</small>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="rated">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" fill="none" viewBox="0 0 48 48" class="e1kh6hag1 seo-pages-1nl2isx-MediaObjectItem" role="img" version="1.1"><path fill="#E0CAFF" fill-rule="evenodd" d="M24.579 6.56c-6.83 0-12.36 5.53-12.36 12.36 0 6.83 5.53 12.36 12.36 12.36 6.83 0 12.36-5.53 12.36-12.36 0-6.83-5.54-12.36-12.36-12.36Zm2.74 14.62.79 3.28-2.85-1.77c-.21-.13-.44-.19-.68-.19-.23 0-.47.06-.67.19l-2.85 1.77.79-3.28c.11-.47-.05-.96-.42-1.28l-2.6-2.2 3.38-.24c.48-.03.91-.34 1.09-.79l1.27-3.07 1.27 3.07c.19.45.61.75 1.09.79l3.38.24-2.59 2.2c-.36.32-.52.81-.4 1.28Z" clip-rule="evenodd"></path><path fill="#593CFB" fill-rule="evenodd" d="m43.399 33.56-5.9-7.22c1.26-2.19 2-4.72 2-7.43C39.489 10.69 32.809 4 24.579 4s-14.92 6.69-14.92 14.92c0 2.37.57 4.61 1.56 6.61-.02.02-.04.03-.06.05-.04.03-.08.06-.12.1l-6.45 7.89c-.28.35-.37.82-.21 1.24.15.42.51.73.95.82l5.24 1.05 2.15 6.45c.16.47.57.81 1.06.86a1.253 1.253 0 0 0 1.23-.59l6.27-9.95c1.06.24 2.16.38 3.29.38.77 0 1.51-.08 2.25-.19l6.15 9.76c.24.38.65.6 1.08.6.05 0 .1 0 .15-.01.49-.06.9-.4 1.06-.86l2.15-6.45 5.24-1.05c.44-.09.8-.4.95-.82.16-.43.08-.9-.2-1.25Zm-31.18-14.64c0-6.82 5.54-12.36 12.36-12.36 6.82 0 12.36 5.54 12.36 12.36 0 6.82-5.54 12.36-12.36 12.36-6.82 0-12.36-5.55-12.36-12.36Zm23.01 16.24c.14-.43.51-.76.96-.85l3.88-.78-4.1-5.01a15.035 15.035 0 0 1-6.53 4.48l4.26 6.75 1.53-4.59Zm-20.94 4.59-1.53-4.6c-.15-.43-.51-.76-.96-.85l-3.88-.78 4.7-5.75c1.58 2.12 3.69 3.82 6.15 4.87l-4.48 7.11Zm19.23-23.09c-.26-.8-.98-1.36-1.82-1.42l-3.8-.26-1.42-3.44a2.07 2.07 0 0 0-1.91-1.28c-.84 0-1.59.5-1.91 1.28l-1.43 3.44-3.81.27c-.84.07-1.55.63-1.8 1.43-.26.8-.01 1.67.63 2.21l2.91 2.47-.89 3.68a2.064 2.064 0 0 0 3.09 2.24l3.2-1.99 3.2 1.99a2.076 2.076 0 0 0 2.3-.08c.68-.5 1-1.34.8-2.16l-.89-3.68 2.91-2.47c.66-.56.91-1.43.64-2.23Zm-5.79 3.24c-.37.31-.53.81-.42 1.28l.79 3.28-2.85-1.77c-.21-.13-.44-.19-.68-.19-.23 0-.47.06-.67.19l-2.85 1.77.79-3.28c.11-.47-.05-.96-.42-1.28l-2.6-2.2 3.38-.24c.48-.03.91-.34 1.09-.79l1.27-3.07 1.27 3.07c.19.45.61.75 1.09.79l3.38.24-2.57 2.2Z" clip-rule="evenodd"></path></svg>
+                                <div >
+                                    <p>All-Star Hosts like VINCENT are the top-rated and most experienced hosts on Turo.</p>
+                                    <a href="#"> Learn more</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="description">
+                            <h6>DESCRIPTION</h6>
+                            <h5>⭐ CLEANED AND SANITIZED DAILY ⭐</h5>
+                            <p>🥳 Thank you for renting with LittleGetaround.com - San Francisco’s #1 Car Rental Company! 🚙 Your car is cleaned, sanitized, and ready to go! </p>
+                        </div>
+
+                        <div class="features">
+                            <button>Mors</button>
+                            <h6>FEATURES</h6> 
+                            <div class="w-75">
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" viewBox="0 0 24 24"
+                                            class="seo-pages-12fc1ls-MediaObjectItem" role="img" version="1.1">
+                                            <path fill="#121214"
+                                                d="M11.936 19.52a.625.625 0 0 1-.625-.626v-4.726H9.05a.626.626 0 0 1 0-1.25h2.26V4.979a.625.625 0 0 1 1.25 0v7.939h2.259a.625.625 0 0 1 0 1.25h-2.26v4.726c0 .345-.28.625-.624.625Z">
+                                            </path>
+                                            <path fill="#121214" fill-rule="evenodd"
+                                                d="M19.204 22.902H4.725a.625.625 0 0 1-.625-.625V1.725c0-.344.28-.625.625-.625h14.479c.344 0 .625.281.625.625v20.552a.626.626 0 0 1-.625.625ZM5.35 21.652h13.229V2.35H5.35v19.302Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <p class="ms-3" >Automatic transmission</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" viewBox="0 0 24 24"
+                                            class="seo-pages-12fc1ls-MediaObjectItem" role="img" version="1.1">
+                                            <path fill="#121214"
+                                                d="M8.05 16.88c0 .34.28.62.62.62.34 0 .62-.28.64-.62V7.76l7.28 4.2-5.57 3.22a.621.621 0 1 0 .62 1.08l5.71-3.3c.36-.21.58-.58.58-1 0-.42-.22-.79-.58-1L9.79 6.59c-.36-.21-.8-.21-1.16 0-.36.21-.58.58-.58 1v9.29Z">
+                                            </path>
+                                            <path fill="#121214" fill-rule="evenodd"
+                                                d="M1 11.97c0 6.04 4.92 10.96 10.97 10.96 6.04 0 10.97-4.91 10.97-10.96C22.94 5.92 18.02 1 11.97 1 5.92 1 1 5.93 1 11.97Zm1.25 0c0-5.36 4.36-9.72 9.72-9.72 5.35 0 9.72 4.36 9.72 9.72s-4.36 9.72-9.72 9.72-9.72-4.36-9.72-9.72Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                        <p class="ms-3" >Android Auto</p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <div class="d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" viewBox="0 0 24 24"
+                                            class="seo-pages-12fc1ls-MediaObjectItem" role="img" version="1.1">
+                                            <path fill="#121214"
+                                                d="M8.05 16.88c0 .34.28.62.62.62.34 0 .62-.28.64-.62V7.76l7.28 4.2-5.57 3.22a.621.621 0 1 0 .62 1.08l5.71-3.3c.36-.21.58-.58.58-1 0-.42-.22-.79-.58-1L9.79 6.59c-.36-.21-.8-.21-1.16 0-.36.21-.58.58-.58 1v9.29Z">
+                                            </path>
+                                            <path fill="#121214" fill-rule="evenodd"
+                                                d="M1 11.97c0 6.04 4.92 10.96 10.97 10.96 6.04 0 10.97-4.91 10.97-10.96C22.94 5.92 18.02 1 11.97 1 5.92 1 1 5.93 1 11.97Zm1.25 0c0-5.36 4.36-9.72 9.72-9.72 5.35 0 9.72 4.36 9.72 9.72s-4.36 9.72-9.72 9.72-9.72-4.36-9.72-9.72Z"
+                                                clip-rule="evenodd"></path></svg>
+                                        <p class="ms-3" >Apple CarPlay</p>
+                                    </div>
+
+                                    <div class="d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" fill="none" viewBox="0 0 24 24"
+                                            class="seo-pages-12fc1ls-MediaObjectItem" role="img" version="1.1">
+                                            <path fill="#121214" fill-rule="evenodd"
+                                                d="M5.65 13.125v-10.1c0-.2.1-.3.2-.4l1.1-1.1c.5-.5 1.2-.5 1.7 0l1.1 1.1c.1.1.2.3.2.4v10.1h.5c.3 0 .6.3.6.6v1.6c0 1.04-.507 1.91-1.3 2.393v1.307c0 .7-.6 1.4-1.4 1.4v1.7c0 .4-.2.7-.6.7-.3 0-.6-.3-.6-.6v-1.8c-.8 0-1.4-.6-1.4-1.4V17.75a2.778 2.778 0 0 1-1.4-2.425v-1.6c0-.3.3-.6.6-.6h.7Zm2.9 0v-3.2h-1.7v3.2h1.7Zm0-6.6v2.2h-1.7v-2.2h1.7Zm0-1.2v-2.1l-.9-.9-.8.9v2.1h1.7Zm-.3 12.8h-1.1c-.067 0-.134-.002-.2-.007v.907c0 .1.1.2.2.2h1.2c.1 0 .2-.1.2-.2v-.914c-.098.01-.198.014-.3.014Zm-2.7-3.7v.9c0 .9.7 1.6 1.6 1.6h1.1c.9 0 1.6-.7 1.6-1.6v-.9h-4.3Z"
+                                                clip-rule="evenodd"></path>
+                                            <path fill="#121214"
+                                                d="M17.75 8.418v.007a1.8 1.8 0 1 1-1.3-1.73v-2.97c0-.4.2-.7.5-.9.3-.2.7-.2 1 0l1.4.9c.3.2.4.6.2.9-.2.3-.6.4-.9.2l-.9-.6v4.193Z">
+                                            </path>
+                                        </svg>
+                                        <p class="ms-3" >AUX input</p>
+                                    </div>
+                                </div>
+                            </div>                     
+                        </div>
+
+                        <div class="extras">
+                            <button>Mors</button>
+                            <h6>EXTRAS</h6>
+                            <p>Add optional Extras to your trip at checkout.</p>
+                            <h5>Unlimited mileage</h5>
+                            <p> Peace of mind - Unlimited miles on your entire trip!</p> 
+                            <button>Mors</button>
+                        </div>
+
+                        <div class="parking-details">
+                            <h6>PARKING DETAILS</h6>
+                            <p>✅ Please check street cleaning signs (allow legal street parking for at least 24 hours) and do not block driveways</p>
+                        </div>
+
+                        <div class="guidelines">
+                            <h6>GUIDELINES</h6>
+                            <p>As per Turo's rules, the car must be returned in the same condition it was received (interior and exterior). We can bill you to have the car cleaned after drop off. </p>
+                            <button>Mors</button>
+                        </div>
+
+                        <div class="rating-reviews">
+                            <div class="hed">
+                                <h6>RATINGS AND REVIEWS</h6>
+                                <h4>4.94 <i class="fa-solid fa-star"></i> </h4>
+                                <span>(72 ratings)</span>
+                            </div>
+
+                            <div class="mt-4">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6>Cleanliness</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <span>4.8</span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6>Maintenance</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 45%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <span>5.0</span>
+                                    </div>                            
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6>Communication</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <span>5.0</span>
+                                    </div>
+                                </div>
+
+                                <div class="row ">
+                                    <div class="col-lg-3">
+                                        <h6>Convenience</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 55%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <span>4.9</span>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <h6>Accuracy</h6>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+                                            <div class="progress-bar" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-1">
+                                        <span>5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Based on 64 guest ratings</p>
+                        </div>
+
+                        <div class="reviews-user">
+                            <h6>REVIEWS</h6>
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="w-100">
+                                        <img class="w-75" src="assets/img/th.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <div>
+                                        <div class="rati-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span><small>Isaac</small> 21 November 2023</span>
+                                        <p>Vincent was amazing and super responsive! Will definitely ride with him again.</p>
+
+                                        <div class="message">
+                                            <h5> VINCENT's <small>response</small></h5>
+                                            <p>Thanks for the review, Isaac! we hope to see you again soon 🚗😊</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+                    
+                        <div class="reviews-user">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="w-100">
+                                        <img class="w-75" src="assets/img/th.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <div>
+                                        <div class="rati-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span><small>Isaac</small> 6 November 2023</span>
+                                        <p>Car was in great shape and drove perfect. Really good communication with Vincent and made my first Turo experience wonderful.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="reviews-user">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="w-100">
+                                        <img class="w-75" src="assets/img/th.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <div>
+                                        <div class="rati-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span><small>Valeria</small> 25 October  2023</span>
+                                        <p>Easy and convenient!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="reviews-user">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="w-100">
+                                        <img class="w-75" src="assets/img/th.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <div>
+                                        <div class="rati-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span><small>Nestor</small> 6 October  2023</span>
+                                        <p>Perfect</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <div class="reviews-user">
+                            <div class="row">
+                                <div class="col-lg-2">
+                                    <div class="w-100">
+                                        <img class="w-75" src="assets/img/th.jpeg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-10 ">
+                                    <div>
+                                        <div class="rati-star">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <span><small>Keitra</small> 4 October  2023</span>
+                                        <p>Vincent was a great host! Would definitely recommend 5/5 stars!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr>
+
+                        <div class="d-flex justify-content-center ">
+                            <button>See more</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-lg-4 bg-warning">
+                    <div class="rt-details p">
+                        <div>
+                            <h6><span class="text-decoration-line-through">US$147</span> US$135 total</h6>
+                            <a href="#">View price details</a>
+                        </div>
+                        <hr>
+
+                        <div>
+                            <label for="">Trip start</label>
+                            <div class="d-flex date2">
+                                <label for="datetimeEnd" class="me3 d-flex align-items-center">
+                                  <input type="text" id="datetimeEnd" value="01/01/2018" placeholder="Select date">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                                    class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                                    <path fill="#121214" fill-rule="evenodd"
+                                      d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                                      clip-rule="evenodd"></path>
+                                  </svg>
+                                </label>
+                  
+                                <label for="start-time2" class="d-flex align-items-center">
+                                  <input type="time" id="start-time2" name="start-time" min="00:00" max="23:59">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                                    class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                                    <path fill="#121214" fill-rule="evenodd"
+                                      d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                                      clip-rule="evenodd"></path>
+                                  </svg>
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="w-100 vh-100 my-4">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13746.695437199416!2d31.044976250000005!3d30.530260049999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1706294293625!5m2!1sar!2seg"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+    </section>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+    <!-- -------------------------- start footer -------------------------- -->
+
+    <footer>
+        <div class=" pt-5 ">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-2 ">
+                        <h6>Site Name</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href="">About</a></li>
+                            <li><a class="text-decoration-none text-black" href="">Team</a></li>
+                            <li><a class="text-decoration-none text-black" href="">Policies</a></li>
+                            <li><a class="text-decoration-none text-black" href="">Careerss</a></li>
+                            <li><a class="text-decoration-none text-black" href="">Press</a></li>
+                            <li><a class="text-decoration-none text-black" href="">OpenRoad</a></li>
+                            <li><a class="text-decoration-none text-black" href="">turo Shop</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-2">
+                        <h6>Explore</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> Book a car </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Weddings </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Trust & safety </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Sustainability </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Get help </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h6>Vehicle types</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> Trucks </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Vans </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Exotic & luxury </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Convertibles </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> sport </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Classics </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Minivans </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> SUVs </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Electric vehicles </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> cars </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h6>Makes</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> Tesla </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Lamborghini </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> jeep </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Rolls-Royce </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Mercedes-Benz </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Ferrari </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Porsche </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> BMW </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Bentley </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Maserati </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <h6>Top Cities</h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Atlanta </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Austin </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Boston </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Charlotte </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Chicago </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Dallas </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Denver </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Fort Lauderdale </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Honolulu </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Houston </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1">
+                        <h6> <br></h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> jersey City </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Las Vegas </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Londo </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Los Angeles </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Miami </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Montreal </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> New York </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Orlando </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Philadelphia </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Phoenix </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-1">
+                        <h6> <br></h6>
+                        <ul class="list-unstyled">
+                            <li><a class="text-decoration-none text-black" href=""> </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Portland </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Sacramento </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> San Diego </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> San Francisco </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Seattle </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Tampa </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Toronto </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Vancouver </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Washington </a></li>
+                            <li><a class="text-decoration-none text-black" href=""> Sydney </a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="  py-3 container w-s-95">
+                <div class="row d-flex justify-content-between align-items-center">
+                    <div class="col-lg-8">
+                        <p>
+                            © 2023 Site Terms Privacy Sitemap Cookiepreferences Do Not sell or share my personal
+                            nformationt
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 offset-1  me-auto">
+                        <div class="w-50">
+                            <div class="d-flex">
+                                <a href="#" class="mx-1"><i class="fa-brands fa-1x fa-facebook"></i></a>
+                                <a href="#" class="mx-1"><i class="fa-brands fa-1x fa-instagram text-danger "></i></a>
+                                <a href="#" class="mx-1"><i class="fa-brands fa-1x fa-twitter"></i></a>
+                                <a href="#" class="mx-1"><i class="fa-brands fa-1x fa-youtube text-danger "></i></a>
+                                <button class="rounded-2 ms-3 "> BLOG </button>
+                            </div>
+
+                            <div class=" d-flex  align-items-center mt-3 ">
+
+                                <div class="icon-download">
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="40px"
+                                            viewBox="0 0 119.664 40" aria-hidden="true" class="seo-pages-0" role="img"
+                                            version="1.1">
+                                            <path
+                                                d="M110.135 0H9.535c-.367 0-.73 0-1.095.002-.306.002-.61.008-.919.013A13.215 13.215 0 0 0 5.517.19a6.665 6.665 0 0 0-1.9.627 6.438 6.438 0 0 0-1.62 1.18A6.258 6.258 0 0 0 .82 3.617a6.601 6.601 0 0 0-.625 1.903 12.993 12.993 0 0 0-.179 2.002c-.01.307-.01.615-.015.921V31.56c.005.31.006.61.015.921a12.992 12.992 0 0 0 .18 2.002 6.588 6.588 0 0 0 .624 1.905A6.208 6.208 0 0 0 1.998 38a6.274 6.274 0 0 0 1.618 1.179 6.7 6.7 0 0 0 1.901.63 13.455 13.455 0 0 0 2.004.177c.31.007.613.011.919.011.366.002.728.002 1.095.002h100.6c.36 0 .724 0 1.084-.002.304 0 .617-.004.922-.01a13.279 13.279 0 0 0 2-.178 6.804 6.804 0 0 0 1.908-.63A6.277 6.277 0 0 0 117.666 38a6.395 6.395 0 0 0 1.182-1.614 6.604 6.604 0 0 0 .619-1.905 13.506 13.506 0 0 0 .185-2.002c.004-.31.004-.61.004-.921.008-.364.008-.725.008-1.094V9.536c0-.366 0-.73-.008-1.092 0-.306 0-.614-.004-.92a13.507 13.507 0 0 0-.185-2.003 6.618 6.618 0 0 0-.62-1.903 6.466 6.466 0 0 0-2.798-2.8 6.768 6.768 0 0 0-1.908-.627 13.044 13.044 0 0 0-2-.176c-.305-.005-.618-.011-.922-.013-.36-.002-.725-.002-1.084-.002Z"
+                                                style="fill: rgb(166, 166, 166);">
+                                            </path>
+                                            <path
+                                                d="M8.445 39.125c-.305 0-.602-.004-.904-.01a12.687 12.687 0 0 1-1.87-.164 5.884 5.884 0 0 1-1.656-.548 5.406 5.406 0 0 1-1.397-1.016 5.32 5.32 0 0 1-1.02-1.397 5.722 5.722 0 0 1-.544-1.657 12.414 12.414 0 0 1-.166-1.875c-.007-.21-.015-.913-.015-.913v-23.1s.009-.692.015-.895a12.37 12.37 0 0 1 .165-1.872 5.755 5.755 0 0 1 .544-1.662 5.373 5.373 0 0 1 1.015-1.398 5.565 5.565 0 0 1 1.402-1.023 5.823 5.823 0 0 1 1.653-.544A12.586 12.586 0 0 1 7.543.887l.902-.012h102.769l.913.013a12.385 12.385 0 0 1 1.858.162 5.938 5.938 0 0 1 1.671.548 5.594 5.594 0 0 1 2.415 2.42 5.763 5.763 0 0 1 .535 1.649 12.995 12.995 0 0 1 .174 1.887c.003.283.003.588.003.89.008.375.008.732.008 1.092v20.929c0 .363 0 .718-.008 1.075 0 .325 0 .623-.004.93a12.731 12.731 0 0 1-.17 1.853 5.739 5.739 0 0 1-.54 1.67 5.48 5.48 0 0 1-1.016 1.386 5.413 5.413 0 0 1-1.4 1.022 5.862 5.862 0 0 1-1.668.55 12.542 12.542 0 0 1-1.869.163c-.293.007-.6.011-.897.011l-1.084.002Z">
+                                            </path>
+                                            <g data-name="<Group>">
+                                                <g data-name="<Group>">
+                                                    <path
+                                                        d="M24.769 20.3a4.949 4.949 0 0 1 2.356-4.151 5.066 5.066 0 0 0-3.99-2.158c-1.68-.176-3.308 1.005-4.164 1.005-.872 0-2.19-.988-3.608-.958a5.315 5.315 0 0 0-4.473 2.728c-1.934 3.348-.491 8.269 1.361 10.976.927 1.325 2.01 2.805 3.428 2.753 1.387-.058 1.905-.885 3.58-.885 1.658 0 2.144.885 3.59.852 1.489-.025 2.426-1.332 3.32-2.67a10.962 10.962 0 0 0 1.52-3.092 4.782 4.782 0 0 1-2.92-4.4ZM22.037 12.21a4.872 4.872 0 0 0 1.115-3.49 4.957 4.957 0 0 0-3.208 1.66A4.636 4.636 0 0 0 18.8 13.74a4.1 4.1 0 0 0 3.237-1.53Z"
+                                                        data-name="<Path>" style="fill: rgb(255, 255, 255);"></path>
+                                                </g>
+                                                <path
+                                                    d="M42.302 27.14H37.57l-1.137 3.356h-2.005l4.484-12.418h2.083l4.483 12.418h-2.039Zm-4.243-1.55h3.752l-1.85-5.446h-.051ZM55.16 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 0 1-2.848-1.583h-.043v4.484H46.63V21.442h1.8v1.506h.033a3.212 3.212 0 0 1 2.883-1.6c2.298 0 3.813 1.816 3.813 4.622Zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.393-1.197 2.393-3.046ZM65.125 25.97c0 2.813-1.506 4.62-3.779 4.62a3.07 3.07 0 0 1-2.848-1.583h-.043v4.484h-1.859V21.442h1.799v1.506h.034a3.212 3.212 0 0 1 2.883-1.6c2.298 0 3.813 1.816 3.813 4.622Zm-1.91 0c0-1.833-.948-3.038-2.393-3.038-1.42 0-2.375 1.23-2.375 3.038 0 1.824.955 3.046 2.375 3.046 1.445 0 2.392-1.197 2.392-3.046ZM71.71 27.036c.138 1.232 1.334 2.04 2.97 2.04 1.566 0 2.693-.808 2.693-1.919 0-.964-.68-1.54-2.29-1.936l-1.609-.388c-2.28-.55-3.339-1.617-3.339-3.348 0-2.142 1.867-3.614 4.519-3.614 2.624 0 4.423 1.472 4.483 3.614h-1.876c-.112-1.239-1.136-1.987-2.634-1.987s-2.521.757-2.521 1.858c0 .878.654 1.395 2.255 1.79l1.368.336c2.548.603 3.606 1.626 3.606 3.443 0 2.323-1.85 3.778-4.793 3.778-2.754 0-4.614-1.42-4.734-3.667ZM83.346 19.3v2.142h1.722v1.472h-1.722v4.991c0 .776.345 1.137 1.102 1.137a5.808 5.808 0 0 0 .611-.043v1.463a5.104 5.104 0 0 1-1.032.086c-1.833 0-2.548-.689-2.548-2.445v-5.189h-1.316v-1.472h1.316V19.3ZM86.065 25.97c0-2.849 1.678-4.639 4.294-4.639 2.625 0 4.295 1.79 4.295 4.639 0 2.856-1.661 4.638-4.295 4.638-2.633 0-4.294-1.782-4.294-4.638Zm6.695 0c0-1.954-.895-3.108-2.401-3.108s-2.4 1.162-2.4 3.108c0 1.962.894 3.106 2.4 3.106s2.401-1.144 2.401-3.106ZM96.186 21.442h1.773v1.541h.043a2.16 2.16 0 0 1 2.177-1.635 2.866 2.866 0 0 1 .637.069v1.738a2.598 2.598 0 0 0-.835-.112 1.873 1.873 0 0 0-1.937 2.083v5.37h-1.858ZM109.384 27.837c-.25 1.643-1.85 2.771-3.898 2.771-2.634 0-4.269-1.764-4.269-4.595 0-2.84 1.644-4.682 4.19-4.682 2.506 0 4.08 1.72 4.08 4.466v.637h-6.394v.112a2.358 2.358 0 0 0 2.436 2.564 2.048 2.048 0 0 0 2.09-1.273Zm-6.282-2.702h4.526a2.177 2.177 0 0 0-2.22-2.298 2.292 2.292 0 0 0-2.306 2.298Z"
+                                                    style="fill: rgb(255, 255, 255);"></path>
+                                            </g>
+                                            <g data-name="<Group>">
+                                                <path
+                                                    d="M37.826 8.731a2.64 2.64 0 0 1 2.808 2.965c0 1.906-1.03 3.002-2.808 3.002h-2.155V8.73Zm-1.228 5.123h1.125a1.876 1.876 0 0 0 1.967-2.146 1.881 1.881 0 0 0-1.967-2.134h-1.125ZM41.68 12.444a2.133 2.133 0 1 1 4.248 0 2.134 2.134 0 1 1-4.247 0Zm3.334 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM51.573 14.698h-.922l-.93-3.317h-.07l-.927 3.317h-.913l-1.242-4.503h.902l.806 3.436h.067l.926-3.436h.852l.926 3.436h.07l.803-3.436h.889ZM53.854 10.195h.855v.715h.066a1.348 1.348 0 0 1 1.344-.802 1.465 1.465 0 0 1 1.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 0 0-1.075 1.141v2.635h-.888ZM59.094 8.437h.888v6.26h-.888ZM61.218 12.444a2.133 2.133 0 1 1 4.247 0 2.134 2.134 0 1 1-4.247 0Zm3.333 0c0-.976-.439-1.547-1.208-1.547-.773 0-1.207.571-1.207 1.547 0 .984.434 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM66.4 13.424c0-.81.604-1.278 1.676-1.344l1.22-.07v-.389c0-.475-.315-.744-.922-.744-.497 0-.84.182-.939.5h-.86c.09-.773.818-1.27 1.84-1.27 1.128 0 1.765.563 1.765 1.514v3.077h-.855v-.633h-.07a1.515 1.515 0 0 1-1.353.707 1.36 1.36 0 0 1-1.501-1.348Zm2.895-.384v-.377l-1.1.07c-.62.042-.9.253-.9.65 0 .405.351.64.834.64a1.062 1.062 0 0 0 1.166-.983ZM71.348 12.444c0-1.423.732-2.324 1.87-2.324a1.484 1.484 0 0 1 1.38.79h.067V8.437h.888v6.26h-.851v-.71h-.07a1.563 1.563 0 0 1-1.415.785c-1.145 0-1.869-.901-1.869-2.328Zm.918 0c0 .955.45 1.53 1.203 1.53.75 0 1.212-.583 1.212-1.526 0-.938-.468-1.53-1.212-1.53-.748 0-1.203.58-1.203 1.526ZM79.23 12.444a2.133 2.133 0 1 1 4.247 0 2.134 2.134 0 1 1-4.247 0Zm3.333 0c0-.976-.438-1.547-1.208-1.547-.772 0-1.207.571-1.207 1.547 0 .984.435 1.55 1.207 1.55.77 0 1.208-.57 1.208-1.55ZM84.67 10.195h.855v.715h.066a1.348 1.348 0 0 1 1.344-.802 1.465 1.465 0 0 1 1.559 1.675v2.915h-.889v-2.692c0-.724-.314-1.084-.972-1.084a1.033 1.033 0 0 0-1.075 1.141v2.635h-.889ZM93.515 9.074v1.141h.976v.749h-.976v2.315c0 .472.194.679.637.679a2.967 2.967 0 0 0 .339-.021v.74a2.916 2.916 0 0 1-.484.046c-.988 0-1.381-.348-1.381-1.216v-2.543h-.715v-.749h.715V9.074ZM95.705 8.437h.88v2.481h.07a1.386 1.386 0 0 1 1.374-.806 1.483 1.483 0 0 1 1.55 1.679v2.907h-.889V12.01c0-.72-.335-1.084-.963-1.084a1.052 1.052 0 0 0-1.134 1.142v2.63h-.888ZM104.761 13.482a1.828 1.828 0 0 1-1.95 1.303 2.045 2.045 0 0 1-2.081-2.325 2.077 2.077 0 0 1 2.076-2.352c1.253 0 2.009.856 2.009 2.27v.31h-3.18v.05a1.19 1.19 0 0 0 1.2 1.29 1.08 1.08 0 0 0 1.07-.546Zm-3.126-1.451h2.275a1.086 1.086 0 0 0-1.109-1.167 1.152 1.152 0 0 0-1.166 1.167Z"
+                                                    style="fill: rgb(255, 255, 255);">
+                                                </path>
+                                            </g>
+                                        </svg>
+                                    </a>
+
+                                    <a href="#" class="text-decoration-none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0"
+                                            viewBox="0 0 135 40" aria-hidden="true" class="seo-pages-0" height="40px"
+                                            role="img" version="1.1" width="135px">
+                                            <style>
+                                                .st1 {
+                                                    fill: #fff
+                                                }
+                                            </style>
+                                            <path
+                                                d="M130 40H5c-2.8 0-5-2.2-5-5V5c0-2.8 2.2-5 5-5h125c2.8 0 5 2.2 5 5v30c0 2.7-2.2 5-5 5z">
+                                            </path>
+                                            <path
+                                                d="M130 .8c2.3 0 4.2 1.9 4.2 4.2v30c0 2.3-1.9 4.2-4.2 4.2H5C2.7 39.2.8 37.3.8 35V5C.8 2.7 2.7.8 5 .8h125m0-.8H5C2.2 0 0 2.2 0 5v30c0 2.8 2.2 5 5 5h125c2.8 0 5-2.2 5-5V5c0-2.7-2.2-5-5-5z"
+                                                style="fill: rgb(166, 166, 166);"></path>
+                                            <path
+                                                d="M68.1 21.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-9.3-6.8c-2.4 0-4.3 1.8-4.3 4.3 0 2.4 1.9 4.3 4.3 4.3s4.3-1.8 4.3-4.3c0-2.6-1.9-4.3-4.3-4.3zm0 6.8c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.4 1 2.4 2.6c0 1.5-1.1 2.6-2.4 2.6zm-11.1-5.5v1.8H52c-.1 1-.5 1.8-1 2.3-.6.6-1.6 1.3-3.3 1.3-2.7 0-4.7-2.1-4.7-4.8s2.1-4.8 4.7-4.8c1.4 0 2.5.6 3.3 1.3l1.3-1.3c-1.1-1-2.5-1.8-4.5-1.8-3.6 0-6.7 3-6.7 6.6s3.1 6.6 6.7 6.6c2 0 3.4-.6 4.6-1.9 1.2-1.2 1.6-2.9 1.6-4.2 0-.4 0-.8-.1-1.1h-6.2zm45.4 1.4c-.4-1-1.4-2.7-3.6-2.7s-4 1.7-4 4.3c0 2.4 1.8 4.3 4.2 4.3 1.9 0 3.1-1.2 3.5-1.9l-1.4-1c-.5.7-1.1 1.2-2.1 1.2s-1.6-.4-2.1-1.3l5.7-2.4-.2-.5zm-5.8 1.4c0-1.6 1.3-2.5 2.2-2.5.7 0 1.4.4 1.6.9l-3.8 1.6zM82.6 30h1.9V17.5h-1.9V30zm-3-7.3c-.5-.5-1.3-1-2.3-1-2.1 0-4.1 1.9-4.1 4.3s1.9 4.2 4.1 4.2c1 0 1.8-.5 2.2-1h.1v.6c0 1.6-.9 2.5-2.3 2.5-1.1 0-1.9-.8-2.1-1.5l-1.6.7c.5 1.1 1.7 2.5 3.8 2.5 2.2 0 4-1.3 4-4.4V22h-1.8v.7zm-2.2 5.9c-1.3 0-2.4-1.1-2.4-2.6s1.1-2.6 2.4-2.6 2.3 1.1 2.3 2.6-1 2.6-2.3 2.6zm24.4-11.1h-4.5V30h1.9v-4.7h2.6c2.1 0 4.1-1.5 4.1-3.9s-2-3.9-4.1-3.9zm.1 6h-2.7v-4.3h2.7c1.4 0 2.2 1.2 2.2 2.1-.1 1.1-.9 2.2-2.2 2.2zm11.5-1.8c-1.4 0-2.8.6-3.3 1.9l1.7.7c.4-.7 1-.9 1.7-.9 1 0 1.9.6 2 1.6v.1c-.3-.2-1.1-.5-1.9-.5-1.8 0-3.6 1-3.6 2.8 0 1.7 1.5 2.8 3.1 2.8 1.3 0 1.9-.6 2.4-1.2h.1v1h1.8v-4.8c-.2-2.2-1.9-3.5-4-3.5zm-.2 6.9c-.6 0-1.5-.3-1.5-1.1 0-1 1.1-1.3 2-1.3.8 0 1.2.2 1.7.4-.2 1.2-1.2 2-2.2 2zm10.5-6.6-2.1 5.4h-.1l-2.2-5.4h-2l3.3 7.6-1.9 4.2h1.9l5.1-11.8h-2zm-16.8 8h1.9V17.5h-1.9V30z"
+                                                class="st1"></path>
+                                            <path
+                                                d="M20.7 19.4 10.1 30.7c.3 1.2 1.4 2.1 2.8 2.1.5 0 1-.1 1.5-.4l12-6.9-5.7-6.1z"
+                                                style="fill: rgb(234, 67, 53);"></path>
+                                            <path
+                                                d="m31.5 17.5-5.2-3-5.8 5.2 5.8 5.8 5.1-3c.9-.5 1.5-1.4 1.5-2.5.1-1.1-.5-2-1.4-2.5z"
+                                                style="fill: rgb(251, 188, 4);"></path>
+                                            <path d="M10.1 9.3c-.1.2-.1.5-.1.7v20c0 .3 0 .5.1.7l11-11-11-10.4z"
+                                                style="fill: rgb(66, 133, 244);"></path>
+                                            <path
+                                                d="m20.8 20 5.5-5.5-12-6.9c-.4-.3-.9-.4-1.5-.4-1.3 0-2.5.9-2.8 2.1L20.8 20z"
+                                                style="fill: rgb(52, 168, 83);">
+                                            </path>
+                                            <path d="M42.095 9.78v-.005l-.1.004z" class="st1"></path>
+                                            <path
+                                                d="M47.375 10.016v-.002c0-.155-.014-.31-.041-.463l-.015-.082H44.225V10.389h2.158c-.036.39-.193.76-.46 1.05a2.26 2.26 0 0 1-3.828-1.659l-.1-.001.1-.004a2.22 2.22 0 0 1 2.23-2.296v-.003.003h.006a1.9 1.9 0 0 1 1.558.674l.07.084.077-.077.53-.53.066-.066-.061-.07-.076.065.076-.066a2.57 2.57 0 0 0-.976-.696h-.002c-.4-.171-.83-.259-1.266-.258h-.002a3.1 3.1 0 0 0-2.28.93h-.001a3.25 3.25 0 0 0 2.278 5.54h.002a3.01 3.01 0 0 0 2.273-.92v-.001l-.066-.064-.006-.005.072.069a2.81 2.81 0 0 0 .778-2.07v-.002zm-1.38 1.493zm-.44-4.62v-.001zm1.72 3.13zM52.685 6.679h-.1v.94H54.265v5.26h.97v-5.26H56.955v-.94h-.1zM73.536 7.478a3.2 3.2 0 0 0-4.542 0l.071.07-.072-.068a3.34 3.34 0 0 0 0 4.587l.072-.068-.07.07a3.22 3.22 0 0 0 4.54 0l.003-.001a3.33 3.33 0 0 0 0-4.588l-.002-.002zm-.64 4.02zm0-3.44-.001.001zm-.073 3.372a2.21 2.21 0 0 1-3.115 0 2.46 2.46 0 0 1 0-3.302 2.21 2.21 0 0 1 3.115 0 2.46 2.46 0 0 1 0 3.302zM80.065 6.679h-.87V11.1L76.46 6.726l-.03-.047h-1.095V12.879h.98v-4.64l2.865 4.593.085-.053-.085.053.03.047H80.165V6.679z"
+                                                class="st1"></path>
+                                            <path
+                                                d="m68.994 7.478-.001.002.072.069zM59.795 6.679h-.1V12.879h.97V6.679h-.1zM68.993 12.068l.002.002.07-.071zM48.355 6.679h-.1V12.879h3.7v-.94h-2.7v-1.7h2.46V9.319h-2.46v-1.7h2.7v-.94h-.1zM61.535 6.679h-.1v.94H63.115v5.26h.97v-5.26H65.755v-.94h-.1z"
+                                                class="st1"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+
+
+                                <div class="language-switcher">
+                                    <button class="dropbtn d-flex align-items-center" id="currentLanguage"
+                                        onclick="toggleDropdown()">
+                                        <span class="flag-icon flag-icon-us"></span> English
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none"
+                                            viewBox="0 0 16 16" class="DateInput_icon seo-pages-1o6k71p" role="img"
+                                            version="1.1">
+                                            <path fill="#121214" fill-rule="evenodd"
+                                                d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                                                clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <div class="dropdown-content ">
+                                        <a href="#" onclick="changeLanguage('us', 'English')">English <span
+                                                class="flag-icon flag-icon-us"></span></a>
+                                        <a href="#" onclick="changeLanguage('fr', 'Français')">Français <span
+                                                class="flag-icon flag-icon-fr"></span></a>
+                                        <a href="#" onclick="changeLanguage('cn', 'China')">China <span
+                                                class="flag-icon flag-icon-cn"></span></a>
+                                        <a href="#" onclick="changeLanguage('tr', 'Turkey')">Turkey <span
+                                                class="flag-icon flag-icon-tr"></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- -------------------------- end foter -------------------------- -->
+
+
+      <!-- --------------------- flatpickr Date ----------------------- -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+
+      <!-- ------------------------ jQuery js------------------------ -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+    <!-- -------------------- bootstrap js ------------------------ -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- --------------------- main js --------------------------  -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
