@@ -1904,8 +1904,10 @@ footer .language-switcher.active .dropdown-content {
 #swiper-carousel .swiper .swiper-button-next, #swiper-carousel .swiper .swiper-button-prev {
   border: 1px solid;
   border-radius: 50%;
-  background-color: rgba(155, 147, 145, 0.4196078431);
+  background-color: #f4f7fd;
   color: #FF4F3B;
+  width: 30px;
+  height: 30px;
 }
 #swiper-carousel .swiper .swiper-button-next::after, #swiper-carousel .swiper .swiper-button-prev::after {
   font-size: 15px !important;
@@ -1924,9 +1926,9 @@ footer .language-switcher.active .dropdown-content {
 #detail .contain-detail .lt-detail {
   padding: 15px;
 }
-#detail .contain-detail .lt-detail .title h3 {
-  font-size: 38px;
-  font-weight: 900;
+#detail .contain-detail .lt-detail .title h4 {
+  font-size: 33px;
+  font-weight: 800;
   line-height: 44px;
 }
 #detail .contain-detail .lt-detail .title span {
@@ -2011,11 +2013,13 @@ footer .language-switcher.active .dropdown-content {
   padding: 15px 0;
 }
 #detail .contain-detail .lt-detail .features button {
-  border: 0.5px solid;
+  border: 0.5px solid #898989;
+  color: #898989;
   background-color: transparent;
 }
 #detail .contain-detail .lt-detail .features button:hover {
   background-color: #f7f3f3;
+  color: #FFF;
 }
 #detail .contain-detail .lt-detail .features h6 {
   font-size: 12px;
@@ -2027,11 +2031,13 @@ footer .language-switcher.active .dropdown-content {
   padding: 15px 0;
 }
 #detail .contain-detail .lt-detail .extras button {
-  border: 0.5px solid;
+  border: 0.5px solid #898989;
+  color: #898989;
   background-color: transparent;
 }
 #detail .contain-detail .lt-detail .extras button:hover {
   background-color: #f7f3f3;
+  color: #FFF;
 }
 #detail .contain-detail .lt-detail .extras h6 {
   font-size: 12px;
@@ -2067,11 +2073,13 @@ footer .language-switcher.active .dropdown-content {
   line-height: 24px;
 }
 #detail .contain-detail .lt-detail .guidelines button {
-  border: 0.5px solid;
+  border: 0.5px solid #898989;
+  color: #898989;
   background-color: transparent;
 }
 #detail .contain-detail .lt-detail .guidelines button:hover {
   background-color: #f7f3f3;
+  color: #FFF;
 }
 #detail .contain-detail .lt-detail .rating-reviews {
   margin-top: 25px;
@@ -2147,10 +2155,168 @@ footer .language-switcher.active .dropdown-content {
   line-height: 24px;
 }
 #detail .contain-detail .lt-detail button {
+  color: #FFF;
   background-color: #FF4F3B;
 }
 #detail .contain-detail .lt-detail button:hover {
   background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#detail .contain-detail .rt-details .head h6 {
+  font-size: 21px;
+  font-weight: 900;
+  line-height: 28px;
+}
+#detail .contain-detail .rt-details .head h6 span {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #767677;
+}
+#detail .contain-detail .rt-details .head a {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #767677;
+}
+#detail .contain-detail .rt-details .head a:hover {
+  color: #898989;
+}
+#detail .contain-detail .rt-details .Trip-start, #detail .contain-detail .rt-details .Trip-end {
+  margin: 10px auto;
+}
+#detail .contain-detail .rt-details .Trip-start h5, #detail .contain-detail .rt-details .Trip-end h5 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #593cfb;
+}
+#detail .contain-detail .rt-details .Trip-start input, #detail .contain-detail .rt-details .Trip-end input {
+  border-color: #FF4F3B !important;
+}
+#detail .contain-detail .rt-details .Trip-start input:focus, #detail .contain-detail .rt-details .Trip-end input:focus {
+  border-color: #FF4F3B !important;
+}
+#detail .contain-detail .rt-details .Pickup {
+  margin: 15px auto;
+}
+#detail .contain-detail .rt-details .Pickup h6 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+#detail .contain-detail .rt-details .Pickup .dropdown {
+  border: 1px solid #FF4F3B;
+}
+#detail .contain-detail .rt-details .discount {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #f4f4f4;
+  border: 1px solid;
+  border-radius: 8px;
+}
+#detail .contain-detail .rt-details .discount h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#detail .contain-detail .rt-details .discount span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #0e865c;
+}
+#detail .contain-detail .rt-details .btn-contin {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #FF4F3B;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#detail .contain-detail .rt-details .btn-contin:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#detail .contain-detail .rt-details .Free-cancellation {
+  display: flex;
+  align-content: center;
+}
+#detail .contain-detail .rt-details .Free-cancellation i {
+  font-size: 30px;
+  color: #FF4F3B;
+  margin-right: 15px;
+}
+#detail .contain-detail .rt-details .Free-cancellation h6 {
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 20px;
+}
+#detail .contain-detail .rt-details .Free-cancellation p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #898989;
+}
+#detail .contain-detail .rt-details .INSURANCE p {
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 16px;
+  color: #767677;
+}
+#detail .contain-detail .rt-details .INSURANCE h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+#detail .contain-detail .rt-details .favorit {
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 1s ease-in-out;
+}
+#detail .contain-detail .rt-details .favorit i {
+  font-size: 18px;
+  margin: 5px;
+}
+#detail .contain-detail .rt-details .favorit:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+  color: #FFF;
+}
+#detail .contain-detail .rt-details .soichl {
+  width: 40px;
+  height: 40px;
+  border: 1px solid;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+}
+#detail .contain-detail .rt-details .soichl:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+  color: #FFF;
+}
+#detail .contain-detail .rt-details .foot-link a {
+  text-decoration: none;
+  color: #FF4F3B;
+  display: block;
+  text-align: center;
+  padding: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+}
+#detail .contain-detail .rt-details .foot-link a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,8 +21,10 @@
         .swiper-button-next ,.swiper-button-prev{
             border: 1px solid;
             border-radius: 50%;
-            background-color: $theme-color;
+            background-color: $gray;
             color: $secondary ;
+            width: 30px;
+            height: 30px;
             &::after {
                 font-size:15px !important;
             }
@@ -36,15 +38,15 @@
 
 #detail {
     margin: 20px auto;
-   .contain-detail {
+    .contain-detail {
         width: 65%;
         margin: auto;
         .lt-detail {
             padding: 15px;
            .title {
-                h3 {
-                    font-size: 38px;
-                    font-weight: 900;
+                h4 {
+                    font-size: 33px;
+                    font-weight: 800;
                     line-height: 44px;
                 } 
                 span {
@@ -139,10 +141,12 @@
             .features {
                 padding: 15px 0;
                 button {
-                    border: 0.5px solid;
+                    border: 0.5px solid #898989;
+                    color: #898989;
                     background-color: transparent;
                     &:hover {
                         background-color: #f7f3f3;
+                        color: $white;
                     }
                 }
                 h6 {
@@ -156,10 +160,12 @@
             .extras {
                 padding: 15px 0;
                 button {
-                    border: 0.5px solid;
+                    border: 0.5px solid #898989;
+                    color: #898989;
                     background-color: transparent;
                     &:hover {
                         background-color: #f7f3f3;
+                        color: $white;
                     }
                 }
                 h6 {
@@ -168,7 +174,7 @@
                     line-height: 16px;
                     margin: 20px auto;
                 }
-                p ,h5 {
+                p,h5 {
                     font-size: 16px;
                     font-weight: 400;
                     line-height: 24px;
@@ -200,10 +206,12 @@
                     line-height: 24px;
                 }
                 button {
-                    border: 0.5px solid;
+                    border: 0.5px solid #898989;
+                    color: #898989;
                     background-color: transparent;
                     &:hover {
                         background-color: #f7f3f3;
+                        color: $white;
                     }
                 }
             }
@@ -290,14 +298,191 @@
             }
             button {
                 @extend %btn-update;
+                color: $white;
                 background-color: $secondary;
                 &:hover {
                     background: $gridenColor;
                 }
             }
         }
-   } 
+
+        .rt-details{ 
+            .head {
+                h6 {
+                    font-size: 21px;
+                    font-weight: 900;
+                    line-height: 28px;
+                    span {
+                        font-size: 21px;
+                        font-weight: 500;
+                        line-height: 28px;
+                        color: #767677;
+                    }
+                }
+                a {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    color: #767677;
+                    &:hover {
+                        color: #898989;
+                    }
+                }
+            }
+
+            .Trip-start ,.Trip-end {
+                margin: 10px auto;
+                h5 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color:#593cfb ;
+                }
+
+                input {
+                    border-color: $secondary !important;
+                    &:focus {
+                        border-color: $secondary !important;
+                    }
+                }
+            }
+
+            .Pickup {
+                margin: 15px auto;
+                h6 {
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 20px;
+                }
+                .dropdown {
+                    border: 1px solid $secondary;
+                }
+            }
+            .discount {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                padding: 10px;
+                margin: 10px auto;
+                background-color: #f4f4f4;
+                border: 1px solid;
+                border-radius: 8px;
+                h6{
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+                span {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                    color: #0e865c;
+                }
+            }
+            .btn-contin {
+                width: 100%;
+                padding: 10px;
+                border-radius:8px ;
+                background-color: $secondary;
+                color: $white;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                &:hover {
+                    background: $gridenColor;
+                }
+            }
+
+            .Free-cancellation {
+                display: flex;
+                align-content: center;
+                i{
+                    font-size: 30px;
+                    color: $secondary;
+                    margin-right: 15px;
+                }
+                h6 {
+                    font-size: 16px;
+                    font-weight: 900;
+                    line-height: 20px;
+                }
+                p {
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 16px;
+                    color: #898989;
+                }
+            }
+            .INSURANCE{
+                p {
+                    font-size: 12px;
+                    font-weight: 900;
+                    line-height: 16px;
+                    color: #767677;
+                }
+                h6 {
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 24px;
+                }
+            }
+            
+            .favorit {
+                width: 100%;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 24px;
+                padding: 8px;
+                border-radius: 8px;
+                transition: all 1s ease-in-out;
+                i {
+                    font-size: 18px;
+                    margin: 5px;
+                }
+                &:hover {
+                    background: $gridenColor;
+                    color: $white;
+                }
+            }
+
+            .soichl {
+                width: 40px;
+                height: 40px;
+                border: 1px solid;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 18px;
+                cursor: pointer;
+                transition: all 1s ease-in-out;
+                &:hover {
+                    background: $gridenColor;
+                    color: $white;
+                }
+            }
+
+            .foot-link {
+                a{
+                    text-decoration: none;
+                    color: $secondary;
+                    display: block;
+                    text-align: center;
+                    padding: 8px;
+                    font-size: 16px;
+                    font-weight: 700;
+                    line-height: 24px;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+
+        }
+    }
 }
+
 
 
 
