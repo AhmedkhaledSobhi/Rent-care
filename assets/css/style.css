@@ -2318,5 +2318,16 @@ footer .language-switcher.active .dropdown-content {
 #detail .contain-detail .rt-details .foot-link a:hover {
   text-decoration: underline;
 }
+@media (max-width: 768px) {
+  #detail .contain-detail {
+    width: 100% !important;
+  }
+  #detail .contain-detail .rt-details .Trip-start .date1, #detail .contain-detail .rt-details .Trip-start .date2, #detail .contain-detail .rt-details .Trip-end .date1, #detail .contain-detail .rt-details .Trip-end .date2 {
+    display: initial !important;
+  }
+  #detail .contain-detail .rt-details .Trip-start .date1 label, #detail .contain-detail .rt-details .Trip-start .date2 label, #detail .contain-detail .rt-details .Trip-end .date1 label, #detail .contain-detail .rt-details .Trip-end .date2 label {
+    margin: 5px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

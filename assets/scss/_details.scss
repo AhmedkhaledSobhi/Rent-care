@@ -480,6 +480,24 @@
 
 
         }
+
+// =============================
+
+        @media (max-width :768px) {
+            width: 100% !important;
+
+            .rt-details{ 
+                .Trip-start ,.Trip-end {
+                    .date1 ,.date2{
+                        display: initial !important ;
+                        label{
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
     }
 }
 
