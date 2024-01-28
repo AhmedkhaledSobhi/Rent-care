@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+
+    <!--  -->
+    <!-- ---------------------- cloud flare flag-icon  ------------------------- -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+    <!-- --------------------- flatpickr Date ----------------------- -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <!-- -------------------- owl.carousel ------------------- -->
+    <link rel="stylesheet" href="./assets/css/ajax-loader.gif">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css">
+    <!-- -------------------- fonawesome css ------------------------- -->
+    <link rel="stylesheet" href="./assets/css/all.min.css">
+    <!-- --------------------- bootstrap css ------------------------------ -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <!-- -------------------- Style css ---------------------- -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+
+      <!--  =================== navbare start ================= -->
+
+  <nav class="navbar bg-body-tertiary fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand" href="#">LoGo</a>
+
+      <div class="d-flex justify-content-between align-items-center px-2">
+        
+        <div class="containe ">
+
+            <div class="row justify-content-between ">
+                <div class="col-lg-3 ">
+                <div class="item1">
+                    <label for="search">Where</label>
+                    <input type="text" id="search" placeholder="city, airport, address or hotel">
+                </div>
+                </div>
+        
+                <div class="col-lg-4">
+                <div class="item2">
+                    <span>From</span>
+        
+                    <div class="d-flex date1">
+                    <label for="datetimeStart" class="me-3 d-flex align-items-center">
+                        <input type="datetime" id="datetimeStart" value="01/01/2018" placeholder="Select date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                        <path fill="#121214" fill-rule="evenodd"
+                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                    </label>
+        
+                    <label for="start-time" class="d-flex align-items-center">
+                        <input type="time" id="start-time" name="start-time" value="" min="00:00" max="23:59">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                        <path fill="#121214" fill-rule="evenodd"
+                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                    </label>
+                    </div>
+        
+                </div>
+                </div>
+        
+                <div class="col-lg-4">
+                <div class="item3">
+                    <span>Until</span>
+        
+                    <div class="d-flex date2">
+                    <label for="datetimeEnd" class="me-3 d-flex align-items-center">
+                        <input type="text" id="datetimeEnd" value="01/01/2018" placeholder="Select date">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                        <path fill="#121214" fill-rule="evenodd"
+                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                    </label>
+        
+                    <label for="start-time2" class="d-flex align-items-center">
+                        <input type="time" id="start-time2" name="start-time" min="00:00" max="23:59">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                        <path fill="#121214" fill-rule="evenodd"
+                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                            clip-rule="evenodd"></path>
+                        </svg>
+                    </label>
+                    </div>
+        
+                </div>
+                </div>
+        
+
+        
+            </div>
+
+        </div>
+
+        <button class="btn-user   ms-5 " type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="">
+            <i class="fa-solid fa-bars pe-1"></i>
+            <i class="fa-regular fa-user"></i>
+          </span>
+        </button>
+      </div>
+
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LoGo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <i class="fa-regular fa-heart"></i>
+                Favorites
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-lines-leaning"></i>
+                Trips
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-message"></i>
+                Inbox
+              </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-circle-user"></i>
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-user"></i>
+                Account
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-car"></i>
+                Become ahost
+              </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-key"></i>
+                How turo works
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-gift"></i>
+                Gift Cards
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-headset"></i>
+                Contact support
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-regular fa-note-sticky"></i>
+                Legal
+              </a>
+            </li>
+            <hr>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log out
+              </a>
+            </li>
+
+            <li class="nav-item" >
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Log in
+              </a>
+            </li>
+
+            <li class="nav-item"  onclick="openlogin()">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                Sign Up
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- -------------------- end Navbar ------------------- -->
+
+
+    <section id="cars-available" class="mt-5">
+        <div class="btn-filter">
+            
+            <div class="d-flex">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Sort by
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+    
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Daily price
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="d-flex">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Book instanty
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+    
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More filters
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <hr>
+        <div class="container-fluid search-car">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div>
+                        <h3>200+ cars available</h3>
+                        <p>These cars can be picked up in thes city.</p>
+                        <div class="" >
+                            <div class="card mb-3" style="max-width: 700px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/prefect-car.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toyota Camry 2023</h4>
+                                            <p class=""> 4.95 <span><i class="fa-solid fa-star"></i> </span> (69trips) <small> <i class="fa-solid fa-hand-holding-heart"></i> All-star Host </small> </p>
+                                            <span> <i class="fa-solid fa-location-dot"></i> Los Angeles</span>
+                                        </div>
+                                        <div class="d-flex mt-4">
+                                            <div class="ms-auto pe-3">
+                                                <h5>$<small>35</small>/day</h5>
+                                                <p class="text-decoration-underline">$35 est.total</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 700px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/prefect-car.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toyota Camry 2023</h4>
+                                            <p class=""> 4.95 <span><i class="fa-solid fa-star"></i> </span> (69trips) <small> <i class="fa-solid fa-hand-holding-heart"></i> All-star Host </small> </p>
+                                            <span> <i class="fa-solid fa-location-dot"></i> Los Angeles</span>
+                                        </div>
+                                        <div class="d-flex mt-4">
+                                            <div class="ms-auto pe-3">
+                                                <h5>$<small>35</small>/day</h5>
+                                                <p class="text-decoration-underline">$35 est.total</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card mb-3" style="max-width: 700px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="assets/img/prefect-car.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title">Toyota Camry 2023</h4>
+                                            <p class=""> 4.95 <span><i class="fa-solid fa-star"></i> </span> (69trips) <small> <i class="fa-solid fa-hand-holding-heart"></i> All-star Host </small> </p>
+                                            <span> <i class="fa-solid fa-location-dot"></i> Los Angeles</span>
+                                        </div>
+                                        <div class="d-flex mt-4">
+                                            <div class="ms-auto pe-3">
+                                                <h5>$<small>35</small>/day</h5>
+                                                <p class="text-decoration-underline">$35 est.total</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13746.695437199416!2d31.044976250000005!3d30.530260049999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1706294293625!5m2!1sar!2seg"
+                            width="730" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+     <!-- ----------- source code  Ahmed Khaled ------------------ -->
+
+  <!--  -->
+ 
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+  <!--  -->
+  <!-- --------------------- flatpickr Date ----------------------- -->
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <!-- ------------------------ jQuery js------------------------ -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <!-- ---------------------- owl.carousel js ------------------- -->
+  <script src="assets/js/owl.carousel.js"></script>
+  <!-- -------------------- bootstrap js ------------------------ -->
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- --------------------- main js --------------------------  -->
+  <script src="assets/js/main.js"></script>
+    
+</body>
+</html>

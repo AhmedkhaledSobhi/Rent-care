@@ -4,10 +4,12 @@
 }
 
 input, textarea, select {
+  border: 0px solid;
   border-color: #be685e !important;
 }
-input:focus, textarea:focus, select:focus {
+input:focus, input :checked, textarea:focus, textarea :checked, select:focus, select :checked {
   box-shadow: 0 0 0 0.25rem rgba(254, 118, 103, 0.6588235294) !important;
+  border: 0px solid #be685e !important;
 }
 
 #register .login .email, #register .login .apple, #register .login .google, #register .login .facebook, #register .login form .btn-confirm {
@@ -1488,6 +1490,9 @@ footer .language-switcher.active .dropdown-content {
   }
 }
 
+#cars-available {
+  margin-top: 90px !important;
+}
 #cars-available .btn-filter {
   margin-left: 50px;
   display: flex;
@@ -1553,6 +1558,18 @@ footer .language-switcher.active .dropdown-content {
     height: auto;
     width: 100% !important;
   }
+}
+
+.navbar .item1, .navbar .item2, .navbar .item3 {
+  display: flex !important;
+  align-items: center;
+  margin: 0 15px;
+}
+.navbar .item1 label, .navbar .item1 span, .navbar .item2 label, .navbar .item2 span, .navbar .item3 label, .navbar .item3 span {
+  margin-right: 10px;
+}
+.navbar .item1 input, .navbar .item2 input, .navbar .item3 input {
+  border: 0px;
 }
 
 #edit {

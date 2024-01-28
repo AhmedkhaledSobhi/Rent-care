@@ -30,9 +30,12 @@ $totle-items-m:76;
 }
 
 input , textarea , select{
+    border: 0px solid;
     border-color: #be685e !important;
-    &:focus   {
+    &:focus , :checked  {
         box-shadow: 0 0 0 0.25rem #fe7667a8 !important;
+        border:0px solid #be685e !important;
+
     }
 } 
 

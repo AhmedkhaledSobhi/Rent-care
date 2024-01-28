@@ -1,5 +1,13 @@
 #cars-available {
+
+
+
+
+//  ===========================================
+
+
     // height: 100vh;
+    margin-top: 90px !important;
     .btn-filter {
         margin-left: 50px;
         display: flex;
@@ -83,3 +91,19 @@
     }
   
 }
+
+.navbar {
+    .item1 ,.item2 ,.item3{
+        display: flex !important;
+        align-items: center;
+        margin: 0 15px;
+    
+        label , span{
+            margin-right: 10px;
+        }
+        input {
+            border: 0px;
+        }
+    }
+}
+
