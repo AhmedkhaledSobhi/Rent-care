@@ -29,13 +29,13 @@ $totle-items-m:76;
     --bs-progress-bar-bg: #FF4F3B !important;
 }
 
-input , textarea , select{
-    border: 0px solid;
-    border-color: #be685e !important;
+input , textarea , select , .accordion {
+    border: 0px solid #c2c2c2;
+    // border-color: #be685e !important;
     &:focus , :checked  {
-        box-shadow: 0 0 0 0.25rem #fe7667a8 !important;
+        box-shadow: 0 0 0 0.20rem #fe7667a8 !important;
         border:0px solid #be685e !important;
-
+        border-radius: 2px;
     }
 } 
 
@@ -72,70 +72,70 @@ input , textarea , select{
 
 }
 
-// @for $i from 1 through $totle-items-m{
+@for $i from 1 through $totle-items-m{
 
-//     .m-a-#{$i +4}{
-//         margin: $i+4px ;
-//     }
+    .m-a-#{$i+4}{
+        margin: $i+4px ;
+    }
 
-//     .m-x-#{$i +4}{
-//         margin-left: $i+4px ;
-//         margin-right: $i+4px ;
-//     }
-//     .m-s-#{$i +4}{
-//         margin-top: $i+4px ;
-//         margin-bottom: $i+4px ;
-//     }
+    .m-x-#{$i+4}{
+        margin-left: $i+4px ;
+        margin-right: $i+4px ;
+    }
+    .m-s-#{$i+4}{
+        margin-top: $i+4px ;
+        margin-bottom: $i+4px ;
+    }
 
-//     .m-r-#{$i +4}{
-//         margin-right: $i+4px ;
-//     }
+    .m-r-#{$i+4}{
+        margin-right: $i+4px ;
+    }
 
-//     .m-l-#{$i +4}{
-//         margin-left: $i+4px ;
-//     }
+    .m-l-#{$i+4}{
+        margin-left: $i+4px ;
+    }
 
-//     .m-t-#{$i +4}{
-//         margin-top: $i+4px ;
-//     }
+    .m-t-#{$i+4}{
+        margin-top: $i+4px ;
+    }
 
-//     .m-b-#{$i +4}{
-//         margin-bottom: $i+4px ;
-//     }
+    .m-b-#{$i+4}{
+        margin-bottom: $i+4px ;
+    }
 
-// }
+}
 
-// @for $i from 1 through $totle-items-m{
+@for $i from 1 through $totle-items-m{
 
-//     .p-a-#{$i +4}{
-//         padding: $i+4px ;
-//     }
+    .p-a-#{$i+4}{
+        padding: $i+4px ;
+    }
 
-//     .p-x-#{$i +4}{
-//         padding-right: $i+4px ;
-//         padding-left: $i+4px ;
-//     }
-//     .p-y-#{$i +4}{
-//         padding-top: $i+4px ;
-//         padding-bottom: $i+4px ;
-//     }
+    .p-x-#{$i+4}{
+        padding-right: $i+4px ;
+        padding-left: $i+4px ;
+    }
+    .p-y-#{$i+4}{
+        padding-top: $i+4px ;
+        padding-bottom: $i+4px ;
+    }
 
-//     .p-r-#{$i +4}{
-//         padding-right: $i+4px ;
-//     }
-//     .p-l-#{$i +4}{
-//         padding-left: $i+4px ;
-//     }
+    .p-r-#{$i+4}{
+        padding-right: $i+4px ;
+    }
+    .p-l-#{$i+4}{
+        padding-left: $i+4px ;
+    }
 
-//     .p-t-#{$i +4}{
-//         padding-top: $i+4px ;
-//     }
+    .p-t-#{$i+4}{
+        padding-top: $i+4px ;
+    }
 
-//     .p-b-#{$i +4}{
-//         padding-bottom: $i+4px ;
-//     }
+    .p-b-#{$i+4}{
+        padding-bottom: $i+4px ;
+    }
 
-// }
+}
 
 
 // ================================================
