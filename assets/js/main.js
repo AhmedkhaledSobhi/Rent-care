@@ -96,3 +96,22 @@ function openlogin() {
     document.getElementById("register").style.display='block'
 }
 
+
+// ==================== ======================
+
+
+function toggleFavorite(event) {
+    event.preventDefault(); // Prevent the default link behavior
+    var heartIcon = event.target;
+
+    // Toggle the 'data-favorite' attribute
+    var isFavorite = heartIcon.getAttribute('data-favorite') === 'true';
+    heartIcon.setAttribute('data-favorite', !isFavorite);
+
+    // Toggle the heart icon color based on the 'data-favorite' attribute
+    if (!isFavorite) {
+      heartIcon.style.color = 'gray'; // Make it red
+    } else {
+      heartIcon.style.color = 'red'; // Reset to default color
+    }
+  }

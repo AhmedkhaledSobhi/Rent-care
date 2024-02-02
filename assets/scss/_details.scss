@@ -169,17 +169,43 @@
                     font-weight: 400;
                     line-height: 24px;
                 }
-            }
-
-            .features {
-                padding: 15px 0;
                 button {
+                    font-size:13px;
+                    font-weight: 900;
+                    line-height: 25px;                  
                     border: 0.5px solid #898989;
+                    border-radius: 0px;
                     color: #898989;
                     background-color: transparent;
                     &:hover {
-                        background-color: #f7f3f3;
-                        color: $white;
+                        background-color: #d9d7d7;
+                    }
+                }
+   
+                .description-content-more {
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: max-height 1.5s;
+                }
+        
+                .description-content-more.show {
+                    max-height: 500px; 
+                    transition: max-height 1.5s ;
+                }
+            }
+
+            .features {
+                padding: 5px 0;
+                button {
+                    font-size:13px;
+                    font-weight: 900;
+                    line-height: 25px;                  
+                    border: 0.5px solid #898989;
+                    border-radius: 0px;
+                    color: #898989;
+                    background-color: transparent;
+                    &:hover {
+                        background-color: #d9d7d7;
                     }
                 }
                 h6 {
@@ -187,18 +213,32 @@
                     font-weight: 900;
                     line-height: 16px;
                     margin: 20px auto;
+                }
+                .more-features {
+
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: max-height 1.5s;
+                }
+        
+                .more-features.show {
+                    max-height: 500px; 
+                    transition: max-height 1.5s ;
                 }
             }
 
             .extras {
                 padding: 15px 0;
                 button {
+                    font-size:13px;
+                    font-weight: 900;
+                    line-height: 25px;                  
                     border: 0.5px solid #898989;
+                    border-radius: 0px;
                     color: #898989;
                     background-color: transparent;
                     &:hover {
-                        background-color: #f7f3f3;
-                        color: $white;
+                        background-color: #d9d7d7;
                     }
                 }
                 h6 {
@@ -207,10 +247,10 @@
                     line-height: 16px;
                     margin: 20px auto;
                 }
-                p,h5 {
+                h4{
                     font-size: 16px;
-                    font-weight: 400;
-                    line-height: 24px;
+                    font-weight: 900;
+                    line-height: 20px;
                 }
             }
             .parking-details {
@@ -238,13 +278,37 @@
                     font-weight: 400;
                     line-height: 24px;
                 }
+
+                .more-guidelines {
+                    ol {
+                        list-style-type: none;
+                        counter-reset: my-counter;
+                        li::before {
+                            content: "- ";
+                            counter-increment: my-counter;
+                            margin-right: 0.5em; 
+                        }
+                    }
+                    overflow: hidden;
+                    max-height: 0;
+                    transition: max-height 1.5s;
+                }
+        
+                .more-guidelines.show {
+                    max-height: 500px; 
+                    transition: max-height 1.5s ;
+                }
+                
                 button {
+                    font-size:13px;
+                    font-weight: 900;
+                    line-height: 25px;                  
                     border: 0.5px solid #898989;
+                    border-radius: 0px;
                     color: #898989;
                     background-color: transparent;
                     &:hover {
-                        background-color: #f7f3f3;
-                        color: $white;
+                        background-color: #d9d7d7;
                     }
                 }
             }
@@ -288,6 +352,18 @@
                 }
             }
 
+            .more-reviews {
+
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 1.5s;
+            }
+    
+            .more-reviews.show {
+                max-height: 950px; 
+                transition: max-height 1.5s ;
+            }
+
             .reviews-user {
                 margin: 25px auto;
                 h6 {
@@ -329,14 +405,19 @@
                     }
                 }
             }
-            button {
-                @extend %btn-update;
-                color: $white;
-                background-color: $secondary;
-                &:hover {
-                    background: $gridenColor;
+            .See-more {
+                display: flex; 
+                justify-content: center;
+                button {
+                    @extend %btn-update;
+                    color: $white;
+                    background-color: $secondary;
+                    &:hover {
+                        background: $gridenColor;
+                    }
                 }
             }
+            
         }
 
         .rt-details{ 
@@ -555,6 +636,77 @@
 
 
         }
+
+     
+      
+          .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            border-radius:10px;
+            transform: translate(-50%, -50%);
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            .card {
+                position: relative;
+                .card-body{
+                    h4 {
+                        font-size: 27px;
+                        font-weight: 700;
+                        line-height: 24px;
+                    }
+                    h6 {
+                        font-size: 17px;
+                        font-weight: 500;
+                        i {
+                            color: $secondary;
+                        }
+                    }
+                }
+                .popup-card {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 20px 15px;
+                   div {
+                        &:first-child span{
+                            background-color: rgba(251, 198, 181, 0.475);
+                            padding: 3px 8px;
+                            color: $secondary;
+                            font-size: 17px;
+                            font-weight: 500;
+                            line-height: 22px;
+                        }
+                        &:last-child {
+                            h4 {
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+                   }
+                }
+                .icon-fav {
+                    position: absolute;
+                    top: 10px;
+                    right: 7px;
+                    background-color: $white;
+                    padding: 5px 10px;
+                    border-radius: 10px;
+                    i {
+                        font-size: 20px;
+                    }
+                }
+            }
+          }
+      
+          #popupButton {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+          }
 
 // =============================
 

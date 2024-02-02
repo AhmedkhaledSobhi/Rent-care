@@ -87,4 +87,10 @@
             width: 90%;
         }
     }
+
+    @media (max-width:768px) {
+        .card-img-carbon {
+           padding-left:20% ;
+        }
+    }
 }
