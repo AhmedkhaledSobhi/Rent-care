@@ -115,3 +115,5 @@ function toggleFavorite(event) {
       heartIcon.style.color = 'red'; // Reset to default color
     }
   }
+
+

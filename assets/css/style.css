@@ -5435,41 +5435,53 @@ nav .offcanvas-body li:hover i {
 #host swiper-container {
   width: 90%;
   height: 100%;
-  margin-top: 50px;
-  padding-top: 50px;
+  margin-top: 70px;
+  padding-top: 70px;
 }
-#host swiper-container swiper-slide {
+#host swiper-container .swiper-slide {
   text-align: center;
   font-size: 18px;
   padding: 10px !important;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 350px !important;
+  margin: 20px !important;
 }
-#host swiper-container swiper-slide .card {
+#host swiper-container .swiper-slide .card {
   background-color: #FFF !important;
 }
-#host swiper-container swiper-slide .card .card-header {
+#host swiper-container .swiper-slide .card .card-header {
   background-color: transparent;
   border-bottom: 0px;
 }
-#host swiper-container swiper-slide .card .card-body i {
+#host swiper-container .swiper-slide .card .card-body i {
   color: #FF4F3B;
 }
-#host swiper-container swiper-slide .card .card-footer {
+#host swiper-container .swiper-slide .card .card-footer {
   background-color: transparent;
   border-top: 0px;
 }
-#host .swiper-horizontal > .swiper-pagination-bullets, #host .swiper-pagination-bullets.swiper-pagination-horizontal, #host .swiper-pagination-custom, #host .swiper-pagination-fraction {
-  display: none !important;
-  bottom: 50px !important;
+#host swiper-container .swiper-button-prev {
+  right: 100px !important;
+  left: auto !important;
+  top: 8px;
 }
-#host .swiper-horizontal > .swiper-pagination-bullets span, #host .swiper-pagination-bullets.swiper-pagination-horizontal span, #host .swiper-pagination-custom span, #host .swiper-pagination-fraction span {
-  display: none !important;
+#host swiper-container .swiper-button-prev::after {
+  font-size: 20px;
+  color: #000000 !important;
+}
+#host swiper-container .swiper-button-next {
+  right: 50px;
+  top: 8px;
+}
+#host swiper-container .swiper-button-next::after {
+  font-size: 20px;
+  color: #000000 !important;
 }
 #host .title-slide {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 80px;
 }
 @media (max-width: 575.98px) {
@@ -5479,6 +5491,33 @@ nav .offcanvas-body li:hover i {
   }
   #host .host-dr h3 {
     font-size: 20px !important;
+  }
+  #host swiper-container {
+    width: 100%;
+    padding-top: 60px;
+    margin-top: 0;
+  }
+  #host swiper-container .swiper-slide {
+    font-size: 16px;
+    width: 320px !important;
+    margin: 20px 10px !important;
+  }
+  #host swiper-container .swiper-button-prev {
+    right: 40px !important;
+  }
+  #host swiper-container .swiper-button-prev::after {
+    font-size: 16px;
+  }
+  #host swiper-container .swiper-button-next {
+    right: 5px;
+  }
+  #host swiper-container .swiper-button-next::after {
+    font-size: 16px;
+  }
+  #host .title-slide {
+    position: absolute;
+    top: 50px;
+    left: 10px;
   }
 }
 
