@@ -28,95 +28,87 @@
 
       <!--  =================== navbare start ================= -->
 
-  <nav class="navbar bg-body-tertiary fixed-top">
-    <div class="container-fluid px-5">
+  <nav class="navbar bg-bodytertiary fixed-top">
+    <div class="container-fluid justify-content-start  ps-5">
       <a class="navbar-brand" href="#">LoGo</a>
-
-      <div class="d-flex justify-content-between align-items-center px-2">
-        
-        <div class="containe ">
-
-            <div class="row justify-content-between ">
-                <div class="col-lg-3 ">
-                <div class="item1">
-                    <label for="search">Where</label>
-                    <input type="text" id="search" placeholder="city, airport, address or hotel">
+  
+      <div class="d-flex justify-content-start align-items-center ">
+  
+        <div class="  ">
+          <div class=" d-flex">
+            <!-- <div class="col-lg-3 "> -->
+              <div class="item1 ">
+                <label for="search">Where</label>
+                <input type="text" class="w-100" id="search" placeholder="city, airport, address or hotel">
+              </div>
+            <!-- </div> -->
+  
+            <!-- <div class="col-lg-5"> -->
+              <div class="item2 ">
+                <span>From</span>
+                <div class="d-flex date1">
+                  <label for="datetimeStart" class="me-3 d-flex align-items-center">
+                    <input type="datetime" id="datetimeStart" value="01/01/2018" placeholder="Select date">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                      class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                      <path fill="#121214" fill-rule="evenodd"
+                        d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </label>
+  
+                  <label for="start-time" class="d-flex align-items-center">
+                    <input type="time" id="start-time" name="start-time" value="" min="00:00" max="23:59">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                      class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                      <path fill="#121214" fill-rule="evenodd"
+                        d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </label>
                 </div>
+              </div>
+            <!-- </div> -->
+  
+            <!-- <div class="col-lg-4"> -->
+              <div class="item3">
+                <span>Until</span>
+                <div class="d-flex date2">
+                  <label for="datetimeEnd" class="me-3 d-flex align-items-center">
+                    <input type="text" id="datetimeEnd" value="01/01/2018" placeholder="Select date">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                      class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                      <path fill="#121214" fill-rule="evenodd"
+                        d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </label>
+  
+                  <label for="start-time2" class="d-flex align-items-center">
+                    <input type="time" id="start-time2" name="start-time" min="00:00" max="23:59">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
+                      class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
+                      <path fill="#121214" fill-rule="evenodd"
+                        d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                  </label>
                 </div>
-        
-                <div class="col-lg-4">
-                <div class="item2">
-                    <span>From</span>
-        
-                    <div class="d-flex date1">
-                    <label for="datetimeStart" class="me-3 d-flex align-items-center">
-                        <input type="datetime" id="datetimeStart" value="01/01/2018" placeholder="Select date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
-                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
-                        <path fill="#121214" fill-rule="evenodd"
-                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                    </label>
-        
-                    <label for="start-time" class="d-flex align-items-center">
-                        <input type="time" id="start-time" name="start-time" value="" min="00:00" max="23:59">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
-                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
-                        <path fill="#121214" fill-rule="evenodd"
-                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                    </label>
-                    </div>
-        
-                </div>
-                </div>
-        
-                <div class="col-lg-4">
-                <div class="item3">
-                    <span>Until</span>
-        
-                    <div class="d-flex date2">
-                    <label for="datetimeEnd" class="me-3 d-flex align-items-center">
-                        <input type="text" id="datetimeEnd" value="01/01/2018" placeholder="Select date">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
-                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
-                        <path fill="#121214" fill-rule="evenodd"
-                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                    </label>
-        
-                    <label for="start-time2" class="d-flex align-items-center">
-                        <input type="time" id="start-time2" name="start-time" min="00:00" max="23:59">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" fill="none" viewBox="0 0 16 16"
-                        class="DateInput_icon seo-pages-1o6k71p" role="img" version="1.1">
-                        <path fill="#121214" fill-rule="evenodd"
-                            d="M14 5.614a.75.75 0 0 1-.245.555l-5.25 4.773a.754.754 0 0 1-1.01 0l-5.25-4.773a.75.75 0 0 1 1.01-1.11L8 9.373l4.745-4.314A.75.75 0 0 1 14 5.614Z"
-                            clip-rule="evenodd"></path>
-                        </svg>
-                    </label>
-                    </div>
-        
-                </div>
-                </div>
-        
-
-        
-            </div>
-
+              </div>
+            <!-- </div> -->
+          </div>
         </div>
-
-        <button class="btn-user   ms-5 " type="button" data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+  
+        <button class="btn-user" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="">
             <i class="fa-solid fa-bars pe-1"></i>
             <i class="fa-regular fa-user"></i>
           </span>
         </button>
-      </div>
 
+      </div>
+  
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LoGo</h5>
@@ -193,23 +185,23 @@
                 Log out
               </a>
             </li>
-
-            <li class="nav-item" >
+  
+            <li class="nav-item">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 Log in
               </a>
             </li>
-
-            <li class="nav-item"  onclick="openlogin()">
+  
+            <li class="nav-item" onclick="openlogin()">
               <a class="nav-link" href="#">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 Sign Up
               </a>
             </li>
-
+  
           </ul>
-
+  
         </div>
       </div>
     </div>
@@ -223,25 +215,52 @@
             <!-- ------------------ btn filter group ------------------------ -->
             <div class="d-flex">
                 <div class="dropdown">
-                    <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <button class="bt dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Sort by
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu"  >
+                        <label for="Relevance"><input id="Relevance" type="radio" name="SortBy"> Relevance </label> 
+                        <label for="priceLow"><input id="priceLow" type="radio" name="SortBy"> Daily price: low to high </label> 
+                        <label for="priceHigh"><input id="priceHigh" type="radio" name="SortBy"> Daily price: high to low </label> 
+                        <label for="Distance"><input id="Distance" type="radio" name="SortBy"> Distance away </label> 
+                        <hr>
+                        <div class="d-flex justify-content-between"> <button> Reset</button> <button>Apply</button></div>
+                    </div>
                 </div>
     
                 <div class="dropdown">
                     <button class="btn dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Daily price
                     </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <div class="dropdown-menu">
+                      <div class="price-input">
+                        <div class="field">
+                          <span>$</span>
+                          <div class="input-min">10</div>
+                        </div>
+                    
+                        <span class="sperater">-</span>
+                    
+                        <div class="field">
+                          <span>%</span>
+                          <div class="input-max">250</div>
+                        </div>
+                    
+                        <div class="day"> /day</div>
+                      </div>
+                    
+                      <div class="slider">
+                        <div class="progress"></div>
+                      </div>
+                    
+                      <div class="range-input">
+                        <input type="range" class="range-min" min="10" max="250" value="10">
+                        <input type="range" class="range-max" min="10" max="250" value="250">
+                      </div>
+                    
+                      <hr>
+                      <div class="d-flex justify-content-between"> <button> Reset</button> <button>View 200+ results</button></div>
+                    </div>
                 </div>
             </div>
 
@@ -251,9 +270,10 @@
                         Book instanty
                     </button>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><p class="dropdown-item">Reserve the car without waiting for host approval.</p></li>
+                        <!-- <li><hr></li> -->
+                        <hr>
+                        <li> <div class="d-flex justify-content-between"> <button> Reset</button> <button>View 200+ results</button></div></li>
                     </ul>
                 </div>
     
@@ -377,7 +397,8 @@
  
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 
-  <!--  -->
+  <!-- ----------------- Search car range price ----------------------------- -->
+  <script src="assets/js/searchCar.js"></script>
   <!-- --------------------- flatpickr Date ----------------------- -->
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <!-- ------------------------ jQuery js------------------------ -->

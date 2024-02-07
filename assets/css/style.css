@@ -21,7 +21,7 @@ input:focus, input :checked, textarea:focus, textarea :checked, select:focus, se
   transition: all 1s ease-in-out;
 }
 
-#detail .contain-detail .lt-detail .See-more button, #cars-available .btn-filter button, #account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
+#detail .contain-detail .lt-detail .See-more button, #cars-available .btn-filter .dropdown-menu button, #cars-available .btn-filter .dropdown-toggle, #account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
   border: 1px solid #000000;
   background-color: transparent;
   border-radius: 7px;
@@ -6106,11 +6106,101 @@ footer .language-switcher.active .dropdown-content {
   margin-left: 50px;
   display: flex;
 }
-#cars-available .btn-filter button {
+#cars-available .btn-filter .dropdown-toggle {
   margin: 0 6px;
+  padding: 3px 15px;
+  transition: all 1s ease-in-out;
+  border: 0.2 rgb(208, 207, 207) !important;
+}
+#cars-available .btn-filter .dropdown-toggle:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#cars-available .btn-filter .dropdown-menu {
+  width: 400px;
+  padding: 20px;
+}
+#cars-available .btn-filter .dropdown-menu input {
+  width: 50%;
+  height: 500px;
+}
+#cars-available .btn-filter .dropdown-menu .price-input {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  margin: 0px 0 15px;
+}
+#cars-available .btn-filter .dropdown-menu .price-input .field {
+  height: 45px;
+  width: 10%;
+  display: flex;
+  align-items: center;
+}
+#cars-available .btn-filter .dropdown-menu .price-input .field div {
+  width: 100px;
+  font-size: 19px;
+  text-align: center;
+}
+#cars-available .btn-filter .dropdown-menu .price-input .sperater {
+  width: 15px;
+  font-size: 33px;
+}
+#cars-available .btn-filter .dropdown-menu .price-input .day {
+  margin-left: 10px;
+  font-size: 20px;
+}
+#cars-available .btn-filter .dropdown-menu .slider {
+  height: 2px;
+  border-radius: 5px;
+  background: #ddd;
+  position: relative;
+}
+#cars-available .btn-filter .dropdown-menu .slider .progress {
+  height: 2px;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #FF4F3B;
+}
+#cars-available .btn-filter .dropdown-menu .range-input {
+  padding-bottom: 20px;
+  position: relative;
+}
+#cars-available .btn-filter .dropdown-menu .range-input input {
+  position: absolute;
+  top: -1px;
+  height: 1px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+#cars-available .btn-filter .dropdown-menu .range-input input:focus, #cars-available .btn-filter .dropdown-menu .range-input input :checked {
+  box-shadow: none !important;
+  border-color: none !important;
+}
+#cars-available .btn-filter .dropdown-menu .range-input input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: #FF4F3B;
+}
+#cars-available .btn-filter .dropdown-menu .range-input input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  border: none;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: #FF4F3B;
+}
+#cars-available .btn-filter .dropdown-menu button {
+  margin: 5px;
   transition: all 1s ease-in-out;
 }
-#cars-available .btn-filter button:hover {
+#cars-available .btn-filter .dropdown-menu button:hover {
   background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
 }
 #cars-available .search-car {
@@ -6178,14 +6268,20 @@ footer .language-switcher.active .dropdown-content {
 
 .navbar .item1, .navbar .item2, .navbar .item3 {
   display: flex !important;
-  align-items: center;
-  margin: 0 15px;
+  margin: 0 10px;
+  border: 0.1px solid rgb(224, 221, 221) !important;
+  border-top: 0 !important;
+  border-left: 0 !important;
+  border-right: 0 !important;
 }
 .navbar .item1 label, .navbar .item1 span, .navbar .item2 label, .navbar .item2 span, .navbar .item3 label, .navbar .item3 span {
   margin-right: 10px;
 }
 .navbar .item1 input, .navbar .item2 input, .navbar .item3 input {
   border: 0px;
+}
+.navbar .btn-user {
+  margin-left: 15rem;
 }
 
 #edit {
