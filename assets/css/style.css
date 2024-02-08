@@ -6119,9 +6119,8 @@ footer .language-switcher.active .dropdown-content {
   width: 400px;
   padding: 20px;
 }
-#cars-available .btn-filter .dropdown-menu input {
-  width: 50%;
-  height: 500px;
+#cars-available .btn-filter .dropdown-menu label {
+  display: block;
 }
 #cars-available .btn-filter .dropdown-menu .price-input {
   width: 100%;
