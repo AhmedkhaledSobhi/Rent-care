@@ -21,7 +21,7 @@ input:focus, input :checked, textarea:focus, textarea :checked, select:focus, se
   transition: all 1s ease-in-out;
 }
 
-#detail .contain-detail .lt-detail .See-more button, #cars-available .btn-filter .dropdown-menu button, #cars-available .btn-filter .dropdown-toggle, #account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
+#detail .contain-detail .lt-detail .See-more button, #cars-available .btn-filter .dropdown-menu button, #cars-available .btn-filter .popup .card .view-result button, #cars-available .btn-filter .dropdown-toggle, #account .container .Close-account button, #account .container .Download-account-data button, #account .container .Travelcredit .code button, #account .container .btn-save-change, #account .container .password-Update button, #account .container .PHONE-Update button {
   border: 1px solid #000000;
   background-color: transparent;
   border-radius: 7px;
@@ -6114,6 +6114,224 @@ footer .language-switcher.active .dropdown-content {
 }
 #cars-available .btn-filter .dropdown-toggle:hover {
   background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+}
+#cars-available .btn-filter .popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 11111111111;
+}
+#cars-available .btn-filter .popup .card {
+  position: relative;
+  width: 45rem;
+  height: 40rem;
+  padding: 20px;
+}
+#cars-available .btn-filter .popup .card .close-popup {
+  cursor: pointer;
+  color: #8c8787 !important;
+  transition: all 1s ease-in-out;
+}
+#cars-available .btn-filter .popup .card .close-popup i {
+  font-size: 29px;
+}
+#cars-available .btn-filter .popup .card .close-popup:hover {
+  color: #FF4F3B !important;
+}
+#cars-available .btn-filter .popup .card h5 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #898989;
+}
+#cars-available .btn-filter .popup .card label {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+}
+#cars-available .btn-filter .popup .card .btn-filter-car {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.3px solid rgb(202, 202, 202);
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 5px 0px 7px;
+  transition: all 0.7s ease-in-out;
+}
+#cars-available .btn-filter .popup .card .btn-filter-car small {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+#cars-available .btn-filter .popup .card .btn-filter-car:hover {
+  border-color: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .btn-filter-car:hover small, #cars-available .btn-filter .popup .card .btn-filter-car:hover svg, #cars-available .btn-filter .popup .card .btn-filter-car:hover i {
+  color: #FF4F3B !important;
+}
+#cars-available .btn-filter .popup .card .year-input {
+  width: 100%;
+  display: flex;
+  align-items: center !important;
+  margin: 5px 0 7px;
+}
+#cars-available .btn-filter .popup .card .year-input .field-year {
+  height: 45px;
+  width: 7%;
+  display: flex;
+  align-content: center;
+}
+#cars-available .btn-filter .popup .card .year-input .field-year div {
+  width: 100px;
+  font-size: 19px;
+  text-align: center;
+}
+#cars-available .btn-filter .popup .card .slider-Year {
+  height: 2px;
+  border-radius: 5px;
+  background: #ddd;
+  position: relative;
+}
+#cars-available .btn-filter .popup .card .slider-Year .progress-year {
+  height: 2px;
+  left: 0%;
+  right: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .range-input-year {
+  padding-bottom: 20px;
+  position: relative;
+}
+#cars-available .btn-filter .popup .card .range-input-year input {
+  position: absolute;
+  top: -1px;
+  height: 1px;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+#cars-available .btn-filter .popup .card .range-input-year input:focus, #cars-available .btn-filter .popup .card .range-input-year input :checked {
+  box-shadow: none !important;
+  border-color: none !important;
+}
+#cars-available .btn-filter .popup .card .range-input-year input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .range-input-year input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  border: none;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .more-features {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 1.5s;
+}
+#cars-available .btn-filter .popup .card .more-features.show {
+  max-height: 500px;
+  transition: max-height 1.5s;
+}
+#cars-available .btn-filter .popup .card .btn-Show-More {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #FF4F3B;
+  margin-top: 10px;
+}
+#cars-available .btn-filter .popup .card .btn-Show-More i {
+  margin: 5px 15px 15px;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input {
+  width: 100%;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeValue {
+  width: 30%;
+  margin-right: 10px;
+  display: flex;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeValue span {
+  margin-left: 5px;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeSlider {
+  width: 100%;
+  flex: 1;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px auto;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container {
+  width: 77px;
+  height: 30px;
+  position: relative;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container .checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+  right: 0px !important;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container .switch {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #e9e9eb;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease-out;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container .switch .slider {
+  width: 27px;
+  height: 27px;
+  position: absolute;
+  left: calc(50% - 13.5px - 10px);
+  top: calc(50% - 13.5px);
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15), 0px 3px 1px rgba(0, 0, 0, 0.06);
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container .checkbox:checked + .switch {
+  background-color: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .Elevate-your-experience .container .checkbox:checked + .switch .slider {
+  left: calc(50% - 13.5px + 10px);
+  top: calc(50% - 13.5px);
+}
+#cars-available .btn-filter .popup .card .view-result {
+  display: flex;
+  justify-content: end;
+}
+#cars-available .btn-filter .popup .card .view-result button {
+  transition: all 1s ease-in-out;
+}
+#cars-available .btn-filter .popup .card .view-result button:hover {
+  background: -webkit-linear-gradient(45deg, #be685e, #ff5805);
+  color: #FFF;
 }
 #cars-available .btn-filter .dropdown-menu {
   width: 400px;
