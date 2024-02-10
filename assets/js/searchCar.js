@@ -42,10 +42,9 @@ input.addEventListener('input', e => {
     event.stopPropagation();
     }
 
-    // Close the popup when clicking the button inside the popup
     function closePopup() {
     popup.style.display = 'none';
-    body.style.overflow = originalOverflow; // Restore the original scroll
+    body.style.overflow = originalOverflow; 
     }
 
 
@@ -86,26 +85,22 @@ function toggleFeatures() {
 
 // ==================================================
 
-// const scopeValue = document.getElementById('scopeValue');
-// const scopeSlider = document.getElementById('scopeSlider');
 
-// scopeSlider.step = 50;
-
-// scopeValue.addEventListener('input', () => {
-//   scopeSlider.value = scopeValue.innerHTML;
-// });
-
-// scopeSlider.addEventListener('input', () => {
-//   scopeValue.innerHTML = scopeSlider.value;
-// });
   
 const scopeValue = document.getElementById('scopeValue');
-    const scopeSlider = document.getElementById('scopeSlider');
+const scopeSlider = document.getElementById('scopeSlider');
+const progress1 = document.querySelector(".sliders .progress");
+const maxValue = parseInt(scopeSlider.max);
 
-    // Set the step attribute of the slider to 50
-    scopeSlider.step = 50;
+scopeSlider.step = 50;
 
-    // Update the value displayed in the #scopeValue element when sliding
-    scopeSlider.addEventListener('input', () => {
-      scopeValue.innerHTML = `${scopeSlider.value} <span>mi/day and more</span>`;
-    });
+scopeValue.addEventListener('input', () => {
+  scopeSlider.value = scopeValue.innerHTML;
+  progress1.style.width = `${((scopeSlider.value - scopeSlider.min) / (maxValue - scopeSlider.min)) * 100}%`;
+});
+
+scopeSlider.addEventListener('input', () => {
+  scopeValue.innerHTML = scopeSlider.value;
+  progress1.style.width = `${((scopeSlider.value - scopeSlider.min) / (maxValue - scopeSlider.min)) * 100}%`;
+});
+

@@ -163,7 +163,7 @@
                 .btn-Show-More{
                     text-decoration: none;
                     display: flex;
-                    align-items: center;
+                    align-content: center;
                     justify-content: center;
                     cursor:pointer;
                     color:$secondary;
@@ -175,20 +175,68 @@
 
                 .Millage-Included {
                 // ============= Start pric Range input ================
-                .scope-input {
+                .scope-input-outline{
                     width: 100%;
                     #scopeValue {
                         width: 30%;
+                        margin-bottom: 10px;
                         margin-right: 10px;
                         display: flex;
                         span{
                             margin-left: 5px;
                         }
                     }
-                    #scopeSlider {
-                        width: 100%;
-                        flex: 1;
+                    .sliders{
+                        height: 3px;
+                        border-radius: 5px;
+                        background: #ddd;
+                        position: relative;
+                        .progress{
+                            height: 5px;
+                            left: 0%;
+                            position: absolute;
+                            border-radius: 5px;
+                            background-color: $secondary;
+                        }
                     }
+                    .scope-input{
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        input {
+                            position: absolute;
+                            top: -3px;
+                            height: 5px;
+                            width: 100%; 
+                            background: none;
+                            pointer-events: none;
+                            -webkit-appearance: none;
+                            &:focus , :checked  {
+                                box-shadow:none !important;
+                                border-color:none !important;
+                            }
+                        }
+                    }
+
+                    input[type='range']::-webkit-slider-thumb{
+                        height: 15px;
+                        width: 15px;
+                        border-radius: 5px ;
+                        pointer-events: auto;
+                        -webkit-appearance: none;
+                        background: $secondary;
+                    }
+
+                    input[type='range']::-moz-range-thumb{
+                        height: 17px;
+                        width: 17px;
+                        border-radius: 50%;
+                        border: none;
+                        pointer-events: auto;
+                        -moz-appearance: none;
+                        background: $secondary;
+                    }
+
                   }
                       
                 // ============= End pric Range input ================
@@ -259,13 +307,7 @@
                 }
             }
         }
-          
-        //   .popup-card {
-        //     display: flex;
-        //     justify-content: space-between;
-        //     margin-top: 10px;
-        //   }
-
+        
         // ==========================
 
 

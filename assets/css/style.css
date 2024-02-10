@@ -6252,7 +6252,7 @@ footer .language-switcher.active .dropdown-content {
 #cars-available .btn-filter .popup .card .btn-Show-More {
   text-decoration: none;
   display: flex;
-  align-items: center;
+  align-content: center;
   justify-content: center;
   cursor: pointer;
   color: #FF4F3B;
@@ -6261,20 +6261,65 @@ footer .language-switcher.active .dropdown-content {
 #cars-available .btn-filter .popup .card .btn-Show-More i {
   margin: 5px 15px 15px;
 }
-#cars-available .btn-filter .popup .card .Millage-Included .scope-input {
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline {
   width: 100%;
 }
-#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeValue {
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline #scopeValue {
   width: 30%;
+  margin-bottom: 10px;
   margin-right: 10px;
   display: flex;
 }
-#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeValue span {
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline #scopeValue span {
   margin-left: 5px;
 }
-#cars-available .btn-filter .popup .card .Millage-Included .scope-input #scopeSlider {
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .sliders {
+  height: 3px;
+  border-radius: 5px;
+  background: #ddd;
+  position: relative;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .sliders .progress {
+  height: 5px;
+  left: 0%;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .scope-input {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .scope-input input {
+  position: absolute;
+  top: -3px;
+  height: 5px;
   width: 100%;
-  flex: 1;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .scope-input input:focus, #cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline .scope-input input :checked {
+  box-shadow: none !important;
+  border-color: none !important;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline input[type=range]::-webkit-slider-thumb {
+  height: 15px;
+  width: 15px;
+  border-radius: 5px;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  background: #FF4F3B;
+}
+#cars-available .btn-filter .popup .card .Millage-Included .scope-input-outline input[type=range]::-moz-range-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  border: none;
+  pointer-events: auto;
+  -moz-appearance: none;
+  background: #FF4F3B;
 }
 #cars-available .btn-filter .popup .card .Elevate-your-experience {
   display: flex;
